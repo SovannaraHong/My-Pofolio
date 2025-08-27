@@ -1,0 +1,59 @@
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes slow-spin-pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin-delay {
+  animation: slow-spin-pulse 4s linear infinite;
+}
+
+.shadow-text:hover {
+  text-shadow: 3px 2px 20px #aafe00;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.box-Get:hover {
+  box-shadow: 3px 2px 20px #aafe00;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+:root {
+  --bg-btn: linear-gradient(
+    119deg,
+    rgba(145, 145, 194, 1) 5%,
+    rgba(25, 235, 250, 1) 28%,
+    rgba(227, 245, 234, 1) 54%,
+    rgba(0, 212, 255, 1) 92%
+  );
+}
+
+.hover-Logo:hover {
+  text-shadow: 2px 3px 10px #ff8800;
+  transition: all 0.3s ease-in-out;
+}
+.effectNav::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+}
+.effectNav:hover::after {
+  width: 100%;
+}
