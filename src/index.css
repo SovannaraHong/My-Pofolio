@@ -2,11 +2,16 @@
 @font-face {
   font-family: "Poppins";
   src: url("./assets/Fonts/Poppins-Regular.ttf");
-  font-family: roboto;
-  src: url("./assets/Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("./assets/Fonts/PressStart2P-Regular.ttf");
 }
 
 @theme {
   --font-popinse: "Poppins", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
+  --font-Style: "Press Start 2P", sans-serif;
+
+  --font-Bit: "Bitcount Single", sans-serif;
 }

@@ -1,0 +1,34 @@
+.autoShow {
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.imgReveal {
+  animation: Reveal both;
+  animation-timeline: view(90% 5%);
+}
+@keyframes Reveal {
+  from {
+    filter: saturate(0) contrast(4) brightness(0.1) blur(5px);
+    opacity: 0;
+    scale: 0.95;
+    translate: 0 4rem;
+  }
+  to {
+    filter: none;
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+  }
+}
