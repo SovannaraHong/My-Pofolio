@@ -1,9 +1,12 @@
 import React from "react";
+import HeroSection from "../components/Hero/HeroSection";
 
 const HomePage = () => {
   return (
     <>
-      <h1 className="pt-[200px]">Hello</h1>
+      <div className="pt-[100px] bg-[#f5f5f5] h-screen">
+        <HeroSection />
+      </div>
     </>
   );
 };
