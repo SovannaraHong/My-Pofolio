@@ -1,6 +1,7 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
+  Navigate,
   Route,
   RouterProvider,
 } from "react-router-dom";
@@ -13,6 +14,7 @@ import {
   AboutLayout,
   ContactLayout,
 } from "./layouts/layout";
+import ScrollPage from "../ScrollPage";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -20,7 +22,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutLayout />}></Route>
         <Route path="profolio" element={<PotfoLayout />}></Route>
-        <Route path="about" element={<AboutLayout />}></Route>
+
         <Route path="contact" element={<ContactLayout />}></Route>
       </Route>
     )

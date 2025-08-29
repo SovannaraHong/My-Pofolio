@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Card.css";
+import { useState } from "react";
 const CardProject = ({ imags, name, title, langues, path, link }) => {
+  const [extend, setExtend] = useState(false);
   return (
     <>
-      <main className="transform transition-transform duration-300 hover:scale-[1.03] flade-up">
+      <main className="transform transition-transform duration-300 hover:scale-[1.03] flade-up font-popinse">
         <div className="bg-white  w-fit p-[20px] rounded-[12px] ">
           <div className="bg-[#e2e2e2] p-[20px] rounded-[12px]">
             <div className="flex gap-4 ">
@@ -15,7 +17,15 @@ const CardProject = ({ imags, name, title, langues, path, link }) => {
             </div>
             <div className="pt-[12px]">
               <h1 className="text-[20px] font-semibold font-Roboto ">{name}</h1>
-              <p>{title}</p>
+              <p className={`text-[12px] ${extend ? "" : " line-clamp-2 "}`}>
+                {title}
+              </p>
+              <button
+                className="text-blue-300"
+                onClick={() => setExtend(!extend)}
+              >
+                {extend ? "See Less" : "See More"}
+              </button>
             </div>
             <div className="flex justify-between items-center">
               <div className="pt-[12px] flex gap-4">

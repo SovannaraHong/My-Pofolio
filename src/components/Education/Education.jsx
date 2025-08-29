@@ -4,10 +4,13 @@ import "./Edu.css";
 import s1 from "../../assets/images/Software/vs.png";
 import s2 from "../../assets/images/Software/ai.png";
 import s3 from "../../assets/images/Software/phs.png";
+import s4 from "../../assets/images/Software/fig.png";
+import s5 from "../../assets/images/Software/pre.png";
+import s6 from "../../assets/images/Software/xd.png";
 import st1 from "../../assets/styleImg/1.png";
 
 const Education = () => {
-  const software = [s1, s2, s3];
+  const software = [s1, s2, s3, s4, s5, s6];
 
   // Array of education/experience items
   const leftItems = [
@@ -55,7 +58,7 @@ const Education = () => {
       </div>
       <div className="relative ">
         <img
-          className="absolute w-[200px] autoAotate blocks  left-[200px]"
+          className="absolute w-[200px]  blocks  left-[200px]"
           src={st1}
           alt=""
         />
@@ -65,11 +68,7 @@ const Education = () => {
           {/* left */}
           <section className="max-w-[400px]">
             <div className="blocks">
-              <img
-                className="w-[250px] rounded-t-[30px] autoAotate"
-                src={r1}
-                alt=""
-              />
+              <img className="w-[250px] rounded-t-[30px] " src={r1} alt="" />
             </div>
             <div className="py-[12px] pt-[30px] ">
               {leftItems.map((item, i) => (
@@ -109,8 +108,8 @@ const Education = () => {
                 <span className="text-[#ff4800]">Hong Sovannara</span>. I’m a
                 passionate Frontend Developer with a strong interest in creating
                 modern, user-friendly, and responsive web applications.
-                <hr className="border-b-1" />
               </p>
+              <hr className="border-b-1" />
               <div className="flex flex-col gap-2 py-[12px]">
                 <p className="flex gap-4">
                   <i className="fa-brands fa-facebook text-[#a593c3]"></i> hong

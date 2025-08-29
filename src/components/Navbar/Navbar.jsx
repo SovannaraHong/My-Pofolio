@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/logo.png";
 
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const navLink = [
     {
@@ -27,7 +27,7 @@ const Navbar = () => {
     },
   ];
 
-  const [ActiveNav, SetActiveNav] = useState("Home");
+  const location = useLocation();
 
   return (
     <>
@@ -46,9 +46,9 @@ const Navbar = () => {
             {navLink.map((list, ind) => (
               <Link key={ind} to={list.path}>
                 <li
-                  onClick={() => SetActiveNav(list.label)}
                   className={`cursor-pointer transition-all duration-200 ease-in-out   ${
-                    ActiveNav === list.label
+                    location.pathname ===
+                    (list.path === "/" ? "/" : `/${list.path}`)
                       ? " bg-white text-black px-3 py-2 rounded-full"
                       : " hover:text-[#ffa802] transition-all duration-200 ease-in-out "
                   }`}

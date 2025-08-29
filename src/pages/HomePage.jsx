@@ -7,7 +7,7 @@ import Education from "../components/Education/Education";
 const HomePage = () => {
   return (
     <>
-      <div className="pt-[150px] bg-[#f5f3d3] h-auto">
+      <div className="pt-[150px] h-auto">
         <HeroSection />
         <Education />
         <MySkill />

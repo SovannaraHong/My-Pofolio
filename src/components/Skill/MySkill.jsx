@@ -29,7 +29,7 @@ const MySkill = () => {
   return (
     <div className="font-popinse pt-[50px]">
       <div className="flex justify-center items-center py-[20px] autoShow">
-        <h1 className="uppercase text-[29px] font-semibold border-b-2 border-b-amber-300">
+        <h1 className=" font-Style uppercase text-[20px] border-b-5  border-b-amber-500 rounded-[15px]">
           My Skill <span className="text-orange-300">& Technology</span>
         </h1>
       </div>

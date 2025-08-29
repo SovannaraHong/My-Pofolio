@@ -24,7 +24,8 @@ const foottag = [
 const groupProject = [
   {
     name: "Zando",
-    title: "",
+    title:
+      "At Zando, we believe that style is an expression of who you are. Explore our curated collections of trendy apparel, accessories, and footwear designed to fit every mood and occasion. Whether you’re looking for everyday essentials or statement pieces, Zando makes fashion simple, accessible, and fun. Step in, discover your perfect look, and let your style shine.",
     imags: [p1, p2, p3],
     langues: [
       <i class="fa-brands fa-react"></i>,
@@ -36,7 +37,8 @@ const groupProject = [
   },
   {
     name: "Ten11",
-    title: "",
+    title:
+      "Ten11 is where creativity and functionality come together. We offer thoughtfully designed products and experiences that elevate everyday life. From cutting-edge gadgets to lifestyle essentials, Ten11 is dedicated to bringing quality, style, and innovation to your fingertips. Discover, explore, and experience the future with Ten11 – where ideas turn into reality.",
     imags: [p4, p5, p6],
     langues: [
       <i class="fa-brands fa-html5"></i>,
@@ -48,7 +50,8 @@ const groupProject = [
   },
   {
     name: "Zando",
-    title: "",
+    title:
+      "At Zando, we believe that style is an expression of who you are. Explore our curated collections of trendy apparel, accessories, and footwear designed to fit every mood and occasion. Whether you’re looking for everyday essentials or statement pieces, Zando makes fashion simple, accessible, and fun. Step in, discover your perfect look, and let your style shine.",
     imags: [p1, p2, p3],
     langues: [
       <i class="fa-brands fa-react"></i>,
@@ -60,31 +63,8 @@ const groupProject = [
   },
   {
     name: "Ten11",
-    title: "",
-    imags: [p4, p5, p6],
-    langues: [
-      <i class="fa-brands fa-html5"></i>,
-      <i class="bx bxl-tailwind-css"></i>,
-      <i class="fa-brands fa-css3-alt"></i>,
-    ],
-    path: "https://zando-clone-omega.vercel.app/",
-    link: "https://github.com/SovannaraHong/Ten11.git",
-  },
-  {
-    name: "Zando",
-    title: "",
-    imags: [p1, p2, p3],
-    langues: [
-      <i class="fa-brands fa-react"></i>,
-      <i class="bx bxl-tailwind-css"></i>,
-      <i class="fa-brands fa-css3-alt"></i>,
-    ],
-    path: "https://zando-clone-omega.vercel.app/",
-    link: "https://github.com/SovannaraHong/zando-clone.git",
-  },
-  {
-    name: "Ten11",
-    title: "",
+    title:
+      "Ten11 is where creativity and functionality come together. We offer thoughtfully designed products and experiences that elevate everyday life. From cutting-edge gadgets to lifestyle essentials, Ten11 is dedicated to bringing quality, style, and innovation to your fingertips. Discover, explore, and experience the future with Ten11 – where ideas turn into reality.",
     imags: [p4, p5, p6],
     langues: [
       <i class="fa-brands fa-html5"></i>,
@@ -96,7 +76,8 @@ const groupProject = [
   },
   {
     name: "Zando",
-    title: "",
+    title:
+      "At Zando, we believe that style is an expression of who you are. Explore our curated collections of trendy apparel, accessories, and footwear designed to fit every mood and occasion. Whether you’re looking for everyday essentials or statement pieces, Zando makes fashion simple, accessible, and fun. Step in, discover your perfect look, and let your style shine.",
     imags: [p1, p2, p3],
     langues: [
       <i class="fa-brands fa-react"></i>,
@@ -108,14 +89,15 @@ const groupProject = [
   },
   {
     name: "Ten11",
-    title: "",
+    title:
+      "Ten11 is where creativity and functionality come together. We offer thoughtfully designed products and experiences that elevate everyday life. From cutting-edge gadgets to lifestyle essentials, Ten11 is dedicated to bringing quality, style, and innovation to your fingertips. Discover, explore, and experience the future with Ten11 – where ideas turn into reality.",
     imags: [p4, p5, p6],
     langues: [
       <i class="fa-brands fa-html5"></i>,
       <i class="bx bxl-tailwind-css"></i>,
       <i class="fa-brands fa-css3-alt"></i>,
     ],
-    path: "https://zando-clone-omega.vercel.app/",
+    path: "https://ten11-yruk.vercel.app/",
     link: "https://github.com/SovannaraHong/Ten11.git",
   },
 ];
