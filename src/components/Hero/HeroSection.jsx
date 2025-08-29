@@ -7,6 +7,7 @@ import Pic from "../../assets/images/image.png";
 import Shape from "../../assets/images/Sh.png";
 import Picture from "../../assets/images/Logos.png";
 import p1 from "../../assets/images/p1.png";
+import pho from "../../assets/Icon/ps.png";
 
 const HeroSection = () => {
   const words = [
@@ -15,7 +16,18 @@ const HeroSection = () => {
     "Freelancer",
     "Creative Coder",
   ];
-  const foottag = ["Fronted Developer", "Graphic Design", "UI UX Design"];
+  const foottag = [
+    { icon: <i className="fa-brands fa-html5"></i>, label: "HTML" },
+    { icon: <i className="fa-brands fa-css3-alt"></i>, label: "CSS" },
+    { icon: <i className="fa-brands fa-square-js"></i>, label: "JAVASCRIPT" },
+    { icon: <i className="bx bxl-typescript"></i>, label: "TYPESCRIPT" },
+    { icon: <i className="fa-brands fa-bootstrap"></i>, label: "BOOSTRAP" },
+    { icon: <i className="bx bxl-tailwind-css"></i>, label: "TAILWIND" },
+    { icon: <i className="fa-brands fa-react"></i>, label: "REACT JS" },
+    { icon: <i className="fa-brands fa-vuejs"></i>, label: "VUE JS" },
+
+    { icon: <i className="fa-brands fa-figma"></i>, label: "FIGMA" },
+  ];
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -215,13 +227,29 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="pt-[60px] ">
-          <div className="flex justify-center items-center gap-30 bg-[#ffa802] py-[15px] ">
-            {foottag.map((item, ind) => (
-              <p className="font-semibold text-[20px]" key={ind}>
-                <i className="fa-solid fa-star"></i> {item}
-              </p>
-            ))}
+        <div className="pt-[60px] flex justify-center items-center overflow-hidden">
+          <div className="scroll-container w-[80%] bg-[#ffa802] py-[15px] rounded-[20px] text-white">
+            <div className="scroll-content">
+              {foottag.map((item, ind) => (
+                <p
+                  className="font-semibold text-[15px] inline-block mx-8 font-Style  justify-center items-center "
+                  key={ind}
+                >
+                  <span className="text-[20px]">{item.icon}</span>{" "}
+                  <span>{item.label}</span>
+                </p>
+              ))}
+              {/* duplicate items for seamless loop */}
+              {foottag.map((item, ind) => (
+                <p
+                  className="font-semibold text-[15px] inline-block mx-8 font-Style justify-center items-center"
+                  key={`dup-${ind}`}
+                >
+                  <span className="text-[20px]">{item.icon}</span>{" "}
+                  <span>{item.label}</span>
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </main>

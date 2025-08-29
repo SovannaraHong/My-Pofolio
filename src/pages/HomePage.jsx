@@ -6,7 +6,7 @@ import Project from "../components/Potfolio/Project";
 const HomePage = () => {
   return (
     <>
-      <div className="pt-[100px] bg-[#f5f3d3] h-auto">
+      <div className="pt-[150px] bg-[#f5f3d3] h-auto">
         <HeroSection />
         <MySkill />
         <Project />

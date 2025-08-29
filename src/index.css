@@ -8,10 +8,15 @@
   font-family: "Press Start 2P";
   src: url("./assets/Fonts/PressStart2P-Regular.ttf");
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
 
 @theme {
   --font-popinse: "Poppins", sans-serif;
   --font-Style: "Press Start 2P", sans-serif;
+  --font-Roboto: "Roboto", sans-serif;
 
   --font-Bit: "Bitcount Single", sans-serif;
 }
