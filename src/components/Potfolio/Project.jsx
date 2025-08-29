@@ -125,7 +125,7 @@ const Project = () => {
     <>
       <main className="h-auto">
         <div className="flex justify-center items-center py-[50px]">
-          <h1 className="text-[30px] font-Style uppercase  border-b-2 border-b-green-600 ">
+          <h1 className="text-[30px] font-Style uppercase  border-b-2 flade-up border-b-green-600 ">
             My Project
           </h1>
         </div>
