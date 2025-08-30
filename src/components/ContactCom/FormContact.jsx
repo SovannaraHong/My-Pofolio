@@ -42,7 +42,7 @@ const FormContact = () => {
         "service_nara0099", // Your EmailJS Service ID
         "template_vo1utsq",
         form.current,
-        "yCXi6bB2bgvgA_5qj" // Your EmailJS Public Key
+        "IR_tXp7Wg6usIMJ-B" // Your EmailJS Public Key
       )
       .then(
         (result) => {
@@ -127,7 +127,7 @@ const FormContact = () => {
               </label>
               <input
                 id="name"
-                name="user_name"
+                name="name"
                 type="text"
                 placeholder="Enter Name..."
                 className="bg-[#c7d7fc] w-full py-2 px-3 rounded-[5px]"
@@ -142,7 +142,7 @@ const FormContact = () => {
               </label>
               <input
                 id="phone"
-                name="user_phone"
+                name="phone"
                 type="number"
                 placeholder="Enter Phone..."
                 className="bg-[#c7d7fc] w-full py-2 px-3 rounded-[5px]"
@@ -157,7 +157,7 @@ const FormContact = () => {
               </label>
               <input
                 id="email"
-                name="user_email"
+                name="email"
                 type="email"
                 placeholder="Enter Email..."
                 className="bg-[#c7d7fc] w-full py-2 px-3 rounded-[5px]"
