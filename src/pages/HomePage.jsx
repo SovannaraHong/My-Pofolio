@@ -3,6 +3,7 @@ import HeroSection from "../components/Hero/HeroSection";
 import MySkill from "../components/Skill/MySkill";
 import Project from "../components/Potfolio/Project";
 import Education from "../components/Education/Education";
+import Contact from "./Contact";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
         <Education />
         <MySkill />
         <Project />
+        <Contact />
       </div>
     </>
   );

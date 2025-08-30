@@ -29,11 +29,11 @@ const MySkill = () => {
   return (
     <div className="font-popinse pt-[50px]">
       <div className="flex justify-center items-center py-[20px] autoShow">
-        <h1 className=" font-Style uppercase text-[20px] border-b-5  border-b-amber-500 rounded-[15px]">
+        <h1 className=" font-Style uppercase text-[26px] border-b-5  border-b-amber-500 rounded-[15px]">
           My Skill <span className="text-orange-300">& Technology</span>
         </h1>
       </div>
-      <div className="flex justify-center items-center py-[40px] imgReveal">
+      <div className="flex justify-center items-center py-[40px] flade-up">
         <div className="grid grid-cols-5 gap-9">
           {IconArr.map((icon, ind) => (
             <CardSkill key={ind} {...icon} />

@@ -5,7 +5,7 @@ const CardProject = ({ imags, name, title, langues, path, link }) => {
   const [extend, setExtend] = useState(false);
   return (
     <>
-      <main className="transform transition-transform duration-300 hover:scale-[1.03] flade-up font-popinse">
+      <main className="transform transition-transform duration-300 hover:scale-[1.03] appBlock font-popinse">
         <div className="bg-white  w-fit p-[20px] rounded-[12px] ">
           <div className="bg-[#e2e2e2] p-[20px] rounded-[12px]">
             <div className="flex gap-4 ">
