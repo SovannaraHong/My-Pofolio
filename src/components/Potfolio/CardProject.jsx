@@ -43,13 +43,12 @@ const CardProject = ({ imags, name, title, langues, path, link }) => {
 
               <div>
                 <div className="flex justify-center items-center gap-3 cursor-pointer">
-                  <p className="text-[20px] border-1 w-[30px] h-[30px] flex justify-center items-center rounded-full">
-                    {" "}
-                    {langues[0]}
-                  </p>
-                  <p className="text-[20px] border-1 w-[30px] h-[30px] flex justify-center items-center rounded-full">
-                    {langues[1]}
-                  </p>
+                  {langues.map((i) => (
+                    <p className="text-[20px] border-1 w-[30px] h-[30px] flex justify-center items-center rounded-full">
+                      {" "}
+                      {i}
+                    </p>
+                  ))}
                 </div>
               </div>
             </div>

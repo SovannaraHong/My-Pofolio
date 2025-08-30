@@ -12,7 +12,7 @@ const RoutLayout = () => {
     if (location.pathname !== "/") {
       navigate("/", { replace: true });
     }
-  }, []);
+  }, [navigate]);
   return (
     <>
       <ScrollPage />
