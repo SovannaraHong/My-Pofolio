@@ -15,6 +15,7 @@ import {
   ContactLayout,
 } from "./layouts/layout";
 import ScrollPage from "../ScrollPage";
+import MyCv from "./components/Cover/MyCv";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -24,6 +25,7 @@ function App() {
         <Route path="profolio" element={<PotfoLayout />}></Route>
 
         <Route path="contact" element={<ContactLayout />}></Route>
+        <Route path="mycv" element={<MyCv />} />
       </Route>
     )
   );

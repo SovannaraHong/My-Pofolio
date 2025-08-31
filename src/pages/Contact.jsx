@@ -5,6 +5,7 @@ import FormContact from "../components/ContactCom/FormContact";
 const Contact = () => {
   return (
     <div className="h-auto ">
+      <ContactHero />
       <FormContact />
     </div>
   );

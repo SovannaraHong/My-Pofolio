@@ -1,0 +1,29 @@
+/* Slide in from left */
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fade up */
+.fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+@keyframes fadeUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

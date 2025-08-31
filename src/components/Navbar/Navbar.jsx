@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/logo.png";
 
 import "./Navbar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navLink = [
     {
@@ -26,8 +26,9 @@ const Navbar = () => {
       icon: <i className="fa-brands fa-whatsapp"></i>,
     },
   ];
-
+  const [active, setActive] = useState(true);
   const location = useLocation();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -46,10 +47,13 @@ const Navbar = () => {
             {navLink.map((list, ind) => (
               <Link key={ind} to={list.path}>
                 <li
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className={`cursor-pointer transition-all duration-200 ease-in-out   ${
                     location.pathname ===
                     (list.path === "/" ? "/" : `/${list.path}`)
-                      ? " bg-white text-black px-3 py-2 rounded-full"
+                      ? " bg-white text-black px-3 py-2 rounded-full font-semibold"
                       : " hover:text-[#ffa802] transition-all duration-200 ease-in-out "
                   }`}
                 >
@@ -60,8 +64,18 @@ const Navbar = () => {
           </ul>
 
           {/* Right (Button) */}
-          <button className="bg-white text-[13px] font-semibold text-black px-7 py-3 rounded-full">
-            Contact Me
+          <button
+            onClick={() => {
+              navigate(location.pathname === "/mycv" ? "/" : "/mycv");
+              setActive(!active);
+            }}
+            className={`text-[13px] font-semibold px-7 py-3 rounded-full transition-all duration-300 ease-in-out ${
+              location.pathname === "/mycv"
+                ? "bg-[#5462dd] text-white"
+                : "bg-white text-black"
+            }`}
+          >
+            {location.pathname === "/mycv" ? "On Page CV" : "My CV"}
           </button>
         </div>
       </nav>

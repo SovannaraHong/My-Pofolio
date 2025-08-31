@@ -19,6 +19,11 @@ import y1 from "../../assets/Pofolio/Youtube/1.png";
 import y2 from "../../assets/Pofolio/Youtube/2.png";
 import y3 from "../../assets/Pofolio/Youtube/3.png";
 
+// pofolio
+import f1 from "../../assets/Pofolio/food/1.png";
+import f2 from "../../assets/Pofolio/food/2.png";
+import f3 from "../../assets/Pofolio/food/3.png";
+
 const foottag = [
   { icon: <i class="fa-brands fa-html5"></i>, label: "HTML" },
   { icon: <i class="fa-brands fa-css3-alt"></i>, label: "CSS" },
@@ -88,6 +93,19 @@ const groupProject = [
     path: "https://e-com-pizza-vgcs.vercel.app/",
     link: "https://github.com/SovannaraHong/YouTube-Clone.git",
   },
+  {
+    name: "YouTube-Clone",
+    title:
+      "YouTube is one of the largest platforms in the world where people can watch, share, and create videos on almost any topic imaginable. From music and movies to tutorials, gaming, education, and vlogs, YouTube gives everyone a space to express creativity and connect with an audience. It has become more than just an entertainment site—it’s also a learning hub, a marketing tool for businesses, and even a career path for many creators. With billions of users worldwide, YouTube continues to shape culture, trends, and the way we consume content every day.",
+    imags: [f1, f2, f3],
+    langues: [
+      <i class="fa-brands fa-html5"></i>,
+
+      <i class="fa-brands fa-css3-alt"></i>,
+    ],
+    path: "https://food-ecom-ten.vercel.app/",
+    link: "https://github.com/SovannaraHong/Food-ecom.git",
+  },
 ];
 
 const Project = () => {
@@ -95,11 +113,11 @@ const Project = () => {
     <>
       <main className="h-auto ">
         <div className="flex justify-center items-center py-[50px]">
-          <h1 className="text-[30px] font-Style uppercase  border-b-2 flade-up border-b-green-600 ">
+          <h1 className="text-[30px] font-Style   uppercase  border-b-2 flade-up border-b-green-600 ">
             My Project
           </h1>
         </div>
-        <div className="grid grid-cols-2 gap-6 px-[50px] cardPro  cursor-pointer">
+        <div className="grid grid-cols-2 gap-6 px-[50px] pt-[30px] cardPro  cursor-pointer">
           {groupProject.map((card, ind) => (
             <CardProject key={ind} {...card} />
           ))}

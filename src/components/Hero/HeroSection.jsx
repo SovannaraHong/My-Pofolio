@@ -8,6 +8,8 @@ import Shape from "../../assets/images/Sh.png";
 import Picture from "../../assets/images/Logos.png";
 import p1 from "../../assets/images/p1.png";
 import pho from "../../assets/Icon/ps.png";
+import { Link, useNavigate } from "react-router-dom";
+import MyCv from "../Cover/MyCv";
 
 const HeroSection = () => {
   const words = [
@@ -60,6 +62,7 @@ const HeroSection = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, wordIndex]);
 
+  const navigate = useNavigate();
   return (
     <>
       <div className="relative ">
@@ -126,7 +129,10 @@ const HeroSection = () => {
               </p>
 
               <div className="mt-4 space-x-4 flex text-[7px] anim-up delay-5">
-                <button className="Btn-Container">
+                <button
+                  onClick={() => navigate("/mycv")}
+                  className="Btn-Container"
+                >
                   <span className="text font-Style">View My CV</span>
                   <span className="icon-Container">
                     {" "}

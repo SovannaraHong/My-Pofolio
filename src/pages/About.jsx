@@ -12,7 +12,7 @@ const About = () => {
         <Education />
         <MySkill />
         <Project />
-
+        <ContactHero />
         <FormContact />
       </div>
     </>

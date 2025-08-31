@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ScrollPage from "../../ScrollPage";
 import { useEffect } from "react";
+import ScrollTop from "../../ScrollTop";
 
 const RoutLayout = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ const RoutLayout = () => {
   }, [navigate]);
   return (
     <>
+      <ScrollTop />
       <ScrollPage />
       <Navbar />
 

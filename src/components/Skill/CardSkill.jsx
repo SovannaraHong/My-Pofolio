@@ -1,42 +1,81 @@
 // CardSkill.jsx
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
-const CardSkill = ({ img, title, color }) => {
+const CardSkill = ({ img, title, color, num }) => {
   const [hover, setHover] = useState(false);
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    let observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let start = 0;
+            let end = num;
+            let duration = 1500; // 1.5s animation
+            let stepTime = Math.abs(Math.floor(duration / end));
+
+            let timer = setInterval(() => {
+              start += 1;
+              setCount(start);
+              if (start >= end) {
+                clearInterval(timer);
+              }
+            }, stepTime);
+            observer.unobserve(entry.target); // run only once
+          }
+        });
+      },
+      { threshold: 0.5 } // trigger when 50% visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+  }, [num]);
 
   return (
     <div
+      ref={ref}
       className="relative group w-40 h-52 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-lg cursor-pointer transform transition duration-300 hover:-translate-y-2"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       {/* Icon */}
-      <div className="flex items-center justify-center h-3/4">
-        <img
-          src={img}
-          alt={title}
-          className="w-20 h-20 object-contain transition-transform duration-300 group-hover:scale-110"
-        />
-      </div>
+      <div className="flex justify-center items-center flex-col gap-5 pt-[25px]">
+        <div className="flex items-center justify-center h-3/4">
+          <img
+            src={img}
+            alt={title}
+            className="w-20 h-20 object-contain transition-transform duration-300 group-hover:scale-110"
+          />
+        </div>
+        <div>
+          {/* Animated number */}
+          <p style={{ color }} className="font-semibold">
+            {count} %
+          </p>
+        </div>
+        {/* Title */}
+        <div className="h-1/4 flex items-center justify-center">
+          <p
+            className="text-sm font-semibold tracking-wider transition"
+            style={{ color: hover ? color : "black" }}
+          >
+            {title}
+          </p>
+        </div>
 
-      {/* Title */}
-      <div className="h-1/4 flex items-center justify-center">
-        <p
-          className="text-sm font-semibold tracking-wider transition"
-          style={{ color: hover ? color : "black" }}
-        >
-          {title}
-        </p>
+        {/* Soft glow effect */}
+        <div
+          className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500"
+          style={{
+            background: `linear-gradient(135deg, ${color}33, ${color}22)`,
+            boxShadow: hover ? `0 0 20px ${color}55` : "none",
+          }}
+        ></div>
       </div>
-
-      {/* Soft glow effect */}
-      <div
-        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500"
-        style={{
-          background: `linear-gradient(135deg, ${color}33, ${color}22)`, // subtle transparent
-          boxShadow: hover ? `0 0 20px ${color}55` : "none", // soft glow, less intense
-        }}
-      ></div>
     </div>
   );
 };

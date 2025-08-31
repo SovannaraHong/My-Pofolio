@@ -2,13 +2,29 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ContactHero from "./ContactHero";
 import "./Contact.css";
+import { Link } from "react-router-dom";
 
 const FormContact = () => {
   const social = [
-    <i className="fa-brands fa-facebook"></i>,
-    <i className="fa-brands fa-tiktok"></i>,
-    <i className="fa-brands fa-linkedin"></i>,
-    <i className="fa-brands fa-telegram"></i>,
+    {
+      icon: <i className="fa-brands fa-facebook"></i>,
+      link: "https://www.facebook.com/share/1BTeNwEsUK/?mibextid=wwXIfr",
+    },
+
+    {
+      icon: <i className="fa-brands fa-tiktok"></i>,
+      link: "https://www.tiktok.com/@akira1269",
+    },
+
+    {
+      icon: <i className="fa-brands fa-linkedin"></i>,
+      link: "https://www.facebook.com/share/1BTeNwEsUK/?mibextid=wwXIfr",
+    },
+
+    {
+      icon: <i className="fa-brands fa-telegram"></i>,
+      link: "@Loveu1289",
+    },
   ];
 
   const contactSocial = [
@@ -59,19 +75,20 @@ const FormContact = () => {
 
   return (
     <>
-      <ContactHero />
       <section className="px-[20px] py-[20px] flex justify-center appearAnimation gap-5 font-popinse bg-[#f5f5f5]">
         {/* Contact Info */}
         <div className="max-w-[600px]">
-          <h1 className="text-[22px] font-semibold mb-2 text-[#282f7e]">
+          <h1
+            className="text-[22px] font-semibold mb-2 text-[#282f7e] border-b-3 border-b-blue-300 inline-block
+          "
+          >
             Get in touch
           </h1>
           <p className="text-gray-600 line-clamp-2 text-[12px]">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            sapiente rem quo eaque natus, quos eos impedit quibusdam hic
-            reiciendis?
+            This is my Contact Form and you can contact me here is thate eazy
+            just input in form the the message it send to me thank you !
           </p>
-          <hr className="border-b-2 my-[40px] border-b-gray-200" />
+          <hr className="border-b-2 my-[40px] border-b-gray-100" />
 
           {contactSocial.map((ct, index) => (
             <div key={index} className="flex gap-4 mb-4">
@@ -94,18 +111,20 @@ const FormContact = () => {
           </h1>
           <div className="flex gap-2">
             {social.map((s, i) => (
-              <p
-                key={i}
-                className="bg-[#5462dd] text-[13px] text-white rounded-full px-[5px] py-[6px] flex justify-center items-center"
-              >
-                {s}
-              </p>
+              <a target="_blank" rel="noopener noreferrer" href={s.link}>
+                <p
+                  key={i}
+                  className="bg-[#5462dd]  hover:scale-[1.3] transition-all duration-200  ease-in-out hover:bg-[#e61c98] text-[13px] text-white rounded-full px-[5px] py-[6px] flex justify-center items-center"
+                >
+                  {s.icon}
+                </p>
+              </a>
             ))}
           </div>
         </div>
 
         {/* Contact Form */}
-        <div className="bg-[#f5f5f5] w-full max-w-[600px] p-[20px] rounded-lg shadow-md">
+        <div className="bg-[#ffffff] w-full max-w-[600px] p-[20px] rounded-lg shadow-md">
           <h1 className="text-[22px] font-semibold mb-2 text-[#282f7e]">
             Send a Message
           </h1>
