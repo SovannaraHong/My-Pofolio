@@ -94,8 +94,8 @@ const HeroSection = () => {
         />
       </div>
       <main>
-        <div className="xl:px-[200px] lg:px-[100px] flex-re md:px-[80px] sm:px-[50px] justify-center  font-popinse flex items-center">
-          <div className="flex justify-center flex-col-reverse  xl:gap-50 lg:gap-80 md:gap-80 sm:gap-50 gap-15 xl:flex-row lg:flex-row md:flex-row sm:flex-row  items-center">
+        <div className="xl:px-[100px] lg:px-[100px] flex-re md:px-[20px] sm:px-[50px] justify-center  font-popinse flex items-center">
+          <div className="flex justify-center flex-col-reverse  xl:gap-50 lg:gap-5 md:gap-50 sm:gap-50 gap-15 xl:flex-row lg:flex-row md:flex-row sm:flex-row  items-center">
             {/* Left content */}
             <div>
               <h1 className="font-semibold xl:text-[28px] lg:text-[22px] text-[15px] py-[10px] font-Style anim-up delay-2">
@@ -113,7 +113,7 @@ const HeroSection = () => {
                 <span className="blinking-cursor">|</span>
               </h3>
 
-              <p className="xl:w-[600px] lg:w-[500px] py-[10px] xl:text-[13px] md:text-[10px] sm:text-[8px] sm:w-[250px] md:w-[300px] lg:text-[10px] w-[250px] text-[10px] anim-up delay-4">
+              <p className="xl:w-[600px] lg:w-[500px] py-[10px] xl:text-[13px] md:text-[10px] sm:text-[10px] sm:w-[240px] md:w-[300px] lg:text-[10px] w-[250px] text-[10px] anim-up delay-4">
                 In my free time, I enjoy researching technology and practicing
                 my front-end development skills. I also spend time reading books
                 to gain knowledge about professional relationships and personal
