@@ -40,8 +40,8 @@
 /* From Uiverse.io by janisar-hyder */
 
 .stack {
-  width: 100%;
-  max-width: 400px;
+  width: auto;
+
   transition: 0.25s ease;
   &:hover {
     transform: rotate(5deg);
@@ -143,58 +143,6 @@
   animation: skyDown 3s linear infinite;
 }
 
-/* button */
-/* From Uiverse.io by vinodjangid07 */
-.Btn-Container {
-  display: flex;
-  width: 170px;
-  height: fit-content;
-  background-color: #29241d;
-  border-radius: 40px;
-  box-shadow: 0px 5px 10px #bebebe;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-}
-.icon-Container {
-  width: 45px;
-  height: 45px;
-  background-color: #f59aff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 3px solid #1d2129;
-}
-.text {
-  width: calc(170px - 45px);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.1em;
-  letter-spacing: 1.2px;
-}
-.icon-Container svg {
-  transition-duration: 1.5s;
-}
-.Btn-Container:hover .icon-Container svg {
-  transition-duration: 1.5s;
-  animation: arrow 1s linear infinite;
-}
-@keyframes arrow {
-  0% {
-    opacity: 0;
-    margin-left: 0px;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 10px;
-  }
-}
-/* From Uiverse.io by Cevorob */
 .btn {
   position: relative;
   height: 50px;
@@ -248,7 +196,6 @@
 }
 
 .btn span {
-  font-size: 12px;
   z-index: 3;
   position: relative;
   font-weight: 600;

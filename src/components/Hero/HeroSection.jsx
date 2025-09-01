@@ -35,6 +35,7 @@ const HeroSection = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
 
+  const [hover, setHover] = useState(true);
   useEffect(() => {
     const currentWord = words[wordIndex];
     let timeout;
@@ -67,53 +68,44 @@ const HeroSection = () => {
     <>
       <div className="relative ">
         <img
-          className="w-[80px] an-sky absolute right-[100px]"
+          className="xl:w-[80px] lg:w-[80px] md:w-[80px] sm:w-[50px] w-[50px]  an-sky absolute xl:right-[100px] lg:right-[300px] md:right-[320px]  sm:right-[230px] right-[10px]"
           src={p1}
           alt=""
         />
         <img
-          className="w-[80px] an-sky-down absolute right-[500px] z-[200]"
+          className="xl:w-[80px] lg:w-[80px] md:w-[80px] sm:w-[50px] w-[50px]  an-sky-down absolute xl:right-[500px] lg:right-[30px] md:right-[30px]   sm:right-[10px] right-[320px] z-[200]"
           src={p1}
           alt=""
         />
         <img
-          className="w-[80px] an-sky-down absolute left-[50px]"
+          className="xl:w-[80px] lg:w-[80px] md:w-[80px] sm:w-[50px] w-[50px]  an-sky-down absolute xl:left-[30px] xl:top-[0px] left-[10px]    top-[250px]"
           src={p1}
           alt=""
         />
         <img
-          className="w-[80px]   absolute top-[400px] right-[470px] z-[200]"
+          className="xl:w-[80px] lg:w-[80px] md:w-[80px] sm:w-[50px] w-[50px] absolute xl:top-[400px] xl:right-[470px] lg:top-[300px] lg:right-[250px]  xl:block lg:block md:block sm:block hidden md:top-[300px] md:right-[250px]  sm:top-[250px] sm:right-[200px]   z-[200] "
           src={p1}
           alt=""
         />
         <img
-          className="w-[200px]   absolute top-[250px] right-[380px] z-[200]"
+          className="xl:w-[200px] lg:w-[150px] md:w-[120px] sm:w-[120px] w-[120px]   absolute xl:top-[250px] lg:top-[200px] xl:right-[380px] lg:right-[250px] md:top-[200px] md:right-[220px] sm:top-[170px] sm:right-[180px] top-[150px] right-[220px] z-[200]"
           src={Shape}
           alt=""
         />
       </div>
       <main>
-        <div className="px-[200px] font-popinse flex items-center">
-          <div className="flex justify-between gap-50 items-center">
+        <div className="xl:px-[200px] lg:px-[100px] flex-re md:px-[80px] sm:px-[50px] justify-center  font-popinse flex items-center">
+          <div className="flex justify-center flex-col-reverse  xl:gap-50 lg:gap-80 md:gap-80 sm:gap-50 gap-15 xl:flex-row lg:flex-row md:flex-row sm:flex-row  items-center">
             {/* Left content */}
             <div>
-              <a className="fancy anim-up delay-1" href="#">
-                <span className="top-key"></span>
-                <span className="text-black anim-glow">
-                  Hello Everyone It me
-                </span>
-                <span className="bottom-key-1"></span>
-                <span className="bottom-key-2"></span>
-              </a>
-
-              <h1 className="font-semibold text-[28px] py-[20px] font-Style anim-up delay-2">
+              <h1 className="font-semibold xl:text-[28px] lg:text-[22px] text-[15px] py-[10px] font-Style anim-up delay-2">
                 I'm{" "}
                 <span className="text-yellow-400 border-b-2 anim-glow">
                   Hong Sovannara
                 </span>
               </h1>
 
-              <h3 className="text-[18px] font-Style anim-up delay-3">
+              <h3 className="xl:text-[18px] lg:text-[16px] md:text-[10px] sm:text-[8px] text-[9px] font-Style anim-up delay-3">
                 And I'm a{" "}
                 <span className="text-cyan-400 font-bold drop-shadow-[0_0_10px_cyan] anim-glow">
                   {text}
@@ -121,95 +113,33 @@ const HeroSection = () => {
                 <span className="blinking-cursor">|</span>
               </h3>
 
-              <p className="w-[600px] py-[15px] text-[13px] anim-up delay-4">
+              <p className="xl:w-[600px] lg:w-[500px] py-[10px] xl:text-[13px] md:text-[10px] sm:text-[8px] sm:w-[250px] md:w-[300px] lg:text-[10px] w-[250px] text-[10px] anim-up delay-4">
                 In my free time, I enjoy researching technology and practicing
                 my front-end development skills. I also spend time reading books
                 to gain knowledge about professional relationships and personal
                 growth.
               </p>
 
-              <div className="mt-4 space-x-4 flex text-[7px] anim-up delay-5">
+              <div className=" space-x-4 flex text-[7px] anim-up delay-5">
                 <button
+                  onMouseEnter={() => setHover(!hover)}
+                  onMouseLeave={() => setHover(!hover)}
+                  className={`xl:text-[15px] lg:text-[15px] md:text-[10px] font-semibold border-1 xl:px-[10px] lg:px-[10px] xl:py-[9px]  lg:py-[9px] md:px-[10px] md:py-[4px] sm:px-[5px] sm:py-[5px] sm:text-[8px] px-[5px] rounded-[5px] hover:bg-amber-400 transition-all duration-300 ease-in-out hover:text-white flex justify-center items-center gap-2`}
                   onClick={() => navigate("/mycv")}
-                  className="Btn-Container"
                 >
-                  <span className="text font-Style">View My CV</span>
-                  <span className="icon-Container">
-                    {" "}
-                    <svg
-                      width="16"
-                      height="19"
-                      viewBox="0 0 16 19"
-                      fill="nones"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                  {hover ? (
+                    <>
                       {" "}
-                      <circle
-                        cx="1.61321"
-                        cy="1.61321"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="5.73583"
-                        cy="1.61321"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="5.73583"
-                        cy="5.5566"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="9.85851"
-                        cy="5.5566"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="9.85851"
-                        cy="9.5"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="13.9811"
-                        cy="9.5"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="5.73583"
-                        cy="13.4434"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="9.85851"
-                        cy="13.4434"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="1.61321"
-                        cy="17.3868"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                      <circle
-                        cx="5.73583"
-                        cy="17.3868"
-                        r="1.5"
-                        fill="black"
-                      ></circle>{" "}
-                    </svg>{" "}
-                  </span>
-                </button>
-
-                <button className="btn">
-                  <span className="font-Style text-[12px]">Hire Me</span>
+                      View My CV{" "}
+                      <i class="bx bx-chevrons-right text-[20px] "></i>
+                    </>
+                  ) : (
+                    <>
+                      {" "}
+                      Come to View{" "}
+                      <i class="bx bx-chevrons-right text-[20px] "></i>
+                    </>
+                  )}
                 </button>
               </div>
             </div>
@@ -226,7 +156,7 @@ const HeroSection = () => {
                 <img
                   src={Picture}
                   alt="Hero"
-                  className="w-[300px] image rounded-[20px] h-[400px] object-cover overflow-hidden"
+                  className="xl:max-w-[300px] lg:max-w-[250px] lg:h-[300px] md:max-w-[250px] md:h-[300px] sm:max-w-[200px] sm:h-[250px]  max-w-[200px] h-[250px] image rounded-[20px] xl:h-[400px] object-cover overflow-hidden"
                 />
               </div>
             </div>

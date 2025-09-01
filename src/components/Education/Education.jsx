@@ -58,13 +58,13 @@ const Education = () => {
       </div>
       <div className="relative ">
         <img
-          className="absolute w-[200px]  blocks  left-[200px]"
+          className="absolute w-[200px]  blocks  xl:left-[200px]"
           src={st1}
           alt=""
         />
       </div>
       <section className="py-[50px] font-popinse">
-        <main className="flex justify-center gap-[200px]">
+        <main className="flex justify-center lg:gap-[200px]">
           {/* left */}
           <section className="max-w-[400px]">
             <div className="blocks">

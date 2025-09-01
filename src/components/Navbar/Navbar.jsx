@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../assets/logo.png";
 
 import "./Navbar.css";
@@ -30,6 +30,16 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const match = navLink.find((i) =>
+      i.path === "/"
+        ? location.pathname === "/"
+        : location.pathname === `/${i.path}`
+    );
+    document.title = match
+      ? `My Portfolio | ${match.label} `
+      : "HONG SOVANNARA";
+  }, [location.pathname]);
   return (
     <>
       <nav className="flex justify-center items-center pt-[20px] font-popinse fixed top-0 left-0 right-0 z-[999999]  ">

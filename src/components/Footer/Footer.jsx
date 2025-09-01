@@ -33,7 +33,7 @@ const Footer = () => {
   const HandleRef = useRef(null);
   return (
     <>
-      <footer className="bg-[#0c1220] text-gray-300 py-10 px-6 ">
+      <footer className="bg-[#0c1220] text-gray-300 py-10 px-6   font-popinse">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo / About */}
           <div>
@@ -51,10 +51,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-3">
               Navigation
             </h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="">
               {navLink.map((nav, i) => (
                 <Link to={nav.path}>
-                  <li key={i}>{nav.label}</li>
+                  <li key={i}>
+                    {" "}
+                    {nav.icon} {nav.label}
+                  </li>
                 </Link>
               ))}
             </ul>
@@ -66,9 +69,16 @@ const Footer = () => {
               Information
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>+855 92379121</li>
-              <li>rapewpew372@gmail.com </li>
-              <li>Hong Sovannara</li>
+              <li>
+                {" "}
+                <i class="fa-solid fa-phone"></i> +855 92379121
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i> rapewpew372@gmail.com{" "}
+              </li>
+              <li>
+                <i class="fa-solid fa-user"></i> Hong Sovannara
+              </li>
             </ul>
           </div>
 
@@ -90,7 +100,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-xs">
             Copyright © {new Date().getFullYear()} All rights reserved | Made
-            with ❤️ by <span className="text-blue-400">YourName</span>
+            with ❤️ by <span className="text-blue-400">HONG SOVANNARA</span>
           </p>
 
           <div className="flex space-x-4 mt-4 md:mt-0">
