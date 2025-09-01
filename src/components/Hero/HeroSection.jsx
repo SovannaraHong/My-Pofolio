@@ -164,11 +164,11 @@ const HeroSection = () => {
         </div>
 
         <div className="pt-[60px] flex justify-center items-center overflow-hidden">
-          <div className="scroll-container w-[80%] bg-[#ffa802] py-[15px] rounded-[20px] text-white">
+          <div className="scroll-container w-[80%] bg-[#ffa802] py-[6px] rounded-[20px] text-white">
             <div className="scroll-content">
               {foottag.map((item, ind) => (
                 <p
-                  className="font-semibold text-[15px] inline-block mx-8 font-Style  justify-center items-center "
+                  className="font-semibold xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-[10px] inline-block mx-8 font-Style  justify-center items-center "
                   key={ind}
                 >
                   <span className="text-[20px]">{item.icon}</span>{" "}
@@ -178,10 +178,10 @@ const HeroSection = () => {
               {/* duplicate items for seamless loop */}
               {foottag.map((item, ind) => (
                 <p
-                  className="font-semibold text-[15px] inline-block mx-8 font-Style justify-center items-center"
+                  className="font-semibold xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-[10px] inline-block mx-8 font-Style justify-center items-center"
                   key={`dup-${ind}`}
                 >
-                  <span className="text-[20px]">{item.icon}</span>{" "}
+                  <span className="text-[15px]">{item.icon}</span>{" "}
                   <span>{item.label}</span>
                 </p>
               ))}

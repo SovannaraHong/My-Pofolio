@@ -40,6 +40,13 @@ const Education = () => {
     },
   ];
 
+  const skillItem = [
+    "Fronted Developer",
+    "Graphic Design",
+    "UI/UX Design",
+    "Motion Graphic",
+  ];
+
   // State to track expanded paragraphs dynamically
   const [expanded, setExpanded] = useState(leftItems.map(() => false));
 
@@ -52,32 +59,37 @@ const Education = () => {
   return (
     <>
       <div className=" flade-up flex justify-center items-center py-[70px] pt-[50px]">
-        <h1 className=" font-Style uppercase text-[30px] border-b-8  border-b-amber-500 rounded-[15px]">
+        <h1 className=" font-Style uppercase xl:text-[30px] lg:text-[28px] md:text-[25px] sm:text-[25px] text-[20px] border-b-8  border-b-amber-500 rounded-[15px]">
           about <span className="text-[#ff4800]">me!</span>
         </h1>
       </div>
       <div className="relative ">
         <img
-          className="absolute w-[200px]  blocks  xl:left-[200px]"
+          className="absolute w-[200px]  blocks  xl:left-[200px] lg:left-[50px] md:left-[0px] sm:left-[-60px]"
           src={st1}
           alt=""
         />
       </div>
-      <section className="py-[50px] font-popinse">
-        <main className="flex justify-center lg:gap-[200px]">
+      <section className="py-[50px] font-popinse px-[20px] ">
+        <main className="flex justify-center xl:flex-row  lg:flex-row md:flex-row sm:flex-row flex-col lg:gap-[200px] xl:gap-[200px] md:gap-[140px]  sm:gap-[50px] ">
           {/* left */}
-          <section className="max-w-[400px]">
-            <div className="blocks">
-              <img className="w-[250px] rounded-t-[30px] " src={r1} alt="" />
+          <section className="xl:max-w-[400px] lg:max-w-[400px] md:max-w-[400px] sm:max-w-[350px]">
+            <div className="blocks flex justify-center items-center">
+              {" "}
+              <img
+                className="xl:w-[250px] lg:w-[250px] md:w-[250px] sm:w-[200px] w-[250px] rounded-t-[30px] "
+                src={r1}
+                alt=""
+              />
             </div>
             <div className="py-[12px] pt-[30px] ">
               {leftItems.map((item, i) => (
                 <div key={i} className="py-[12px] blocks">
-                  <p className="text-[#ff4800] font-semibold font-Roboto">
+                  <p className="text-[#ff4800] font-semibold font-Roboto xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[11px]">
                     {item.year}
                   </p>
                   <p
-                    className={`font-semibold w-[290px] text-[14px] ${
+                    className={`font-semibold xl:w-[290px] lg:w-[290px] md:w-[290px] sm:w-[220px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[11px] ${
                       expanded[i] ? "" : "line-clamp-3"
                     }`}
                   >
@@ -96,20 +108,20 @@ const Education = () => {
           </section>
 
           {/* right */}
-          <section className="max-w-[400px]">
+          <section className="xl:max-w-[400px] lg:max-w-[400px] md:max-w-[400px] sm:max-w-[350px]">
             <div>
-              <button className=" blocks border-1 px-[30px] rounded-full font-semibold text-[26px] italic py-[5px]">
+              <button className=" blocks border-1 px-[30px] rounded-full font-semibold xl:text-[26px] lg:text-[26px] md:text-[26px] sm:text-[19px] italic py-[5px]">
                 hi here!
               </button>
             </div>
             <div className="py-[15px] blocks">
-              <p className="w-[400px]">
+              <p className="xl:w-[400px] md:w-[400px] sm:w-[400px] lg:w-[400px] w-[300px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[12px] text-[11px]">
                 Hi, my name is{" "}
                 <span className="text-[#ff4800]">Hong Sovannara</span>. I’m a
                 passionate Frontend Developer with a strong interest in creating
                 modern, user-friendly, and responsive web applications.
               </p>
-              <hr className="border-b-1" />
+              <hr className="border-b-1 my-[10px]" />
               <div className="flex flex-col gap-2 py-[12px]">
                 <p className="flex gap-4">
                   <i className="fa-brands fa-facebook text-[#a593c3]"></i> hong
@@ -126,32 +138,25 @@ const Education = () => {
               </div>
             </div>
             <div className="blocks">
-              <button className="font-extrabold font-Roboto text-[20px] uppercase bg-[#cfe472] rounded-full px-[30px] py-[5px]">
+              <button className="font-extrabold font-Roboto xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[15px] uppercase bg-[#cfe472] rounded-full px-[30px] py-[5px]">
                 SKILLS
               </button>
-              <div className="grid grid-cols-3 gap-2 py-[20px]">
-                <button className="btn-shine btns">
-                  <span>Frontend Developer</span>
-                </button>
-                <button className="btn-shine btns">
-                  <span>Graphic Design</span>
-                </button>
-                <button className="btn-shine btns">
-                  <span>UI / UX Design</span>
-                </button>
-                <button className="btn-shine btns">
-                  <span>Motion Graphic</span>
-                </button>
+              <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-2 py-[20px]">
+                {skillItem.map((i) => (
+                  <button className="border-3 border-blue-100 px-[20px] py-[2px] bg-[#f5f5f5] hover:scale-[1.2] transition-all duration-300 ease-in-out  text-[12px] font-semibold rounded-[10px]">
+                    {i}
+                  </button>
+                ))}
               </div>
             </div>
             <div className="pt-[20px] blocks ">
-              <button className=" blocks font-extrabold font-Roboto text-[20px] uppercase bg-[#ffb8ff] rounded-full px-[30px] py-[5px]">
+              <button className=" blocks font-extrabold font-Roboto xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[15px] text-[13px] uppercase bg-[#ffb8ff] rounded-full px-[30px] py-[9px]">
                 Software
               </button>
-              <div className="flex justify-start items-center gap-[15px] py-[10px] ">
+              <div className="flex justify-start items-center gap-[15px] pt-[20px] py-[10px] ">
                 {software.map((s, i) => (
                   <img
-                    className="border-1 px-[10px] py-[8px] rounded-[5px] w-[50px]"
+                    className="border-1 xl:px-[10px] xl:py-[8px] xl:w-[50px] lg:px-[10px] lg:py-[8px] lg:w-[50px] md:px-[10px] md:py-[8px] md:w-[50px] sm:px-[6px] sm:py-[6px] sm:w-[30px] w-[40px] px-[6px] py-[6px] rounded-[5px] "
                     src={s}
                     alt={i}
                     key={i}

@@ -38,7 +38,7 @@ const CardSkill = ({ img, title, color, num }) => {
   return (
     <div
       ref={ref}
-      className="relative group w-40 h-52 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-lg cursor-pointer transform transition duration-300 hover:-translate-y-2"
+      className="relative group xl:w-[160px] lg:w-[160px] md:w-[160px] sm:w-[160px] w-[120px] xl:h-[208px] lg:h-[208px] md:h-[208px] sm:h-[208px] h-[158px] rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-lg cursor-pointer transform transition duration-300 hover:-translate-y-2"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -48,19 +48,22 @@ const CardSkill = ({ img, title, color, num }) => {
           <img
             src={img}
             alt={title}
-            className="w-20 h-20 object-contain transition-transform duration-300 group-hover:scale-110"
+            className="xl:w-[80px] lg:w-[80px] md:w-[80px] sm:w-[80px] w-[40px] xl:h-[80px] lg:h-[80px] md:h-[80px] sm:h-[80px] h-[40px] object-contain transition-transform duration-300 group-hover:scale-110"
           />
         </div>
         <div>
           {/* Animated number */}
-          <p style={{ color }} className="font-semibold">
+          <p
+            style={{ color }}
+            className="font-semibold xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[12px]"
+          >
             {count} %
           </p>
         </div>
         {/* Title */}
         <div className="h-1/4 flex items-center justify-center">
           <p
-            className="text-sm font-semibold tracking-wider transition"
+            className="xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[12px] font-semibold tracking-wider transition"
             style={{ color: hover ? color : "black" }}
           >
             {title}
