@@ -9,12 +9,17 @@ const CardProject = ({ imags, name, title, langues, path, link }) => {
         <div className="bg-white  w-fit p-[20px] rounded-[12px] ">
           <div className="bg-[#e2e2e2] p-[20px] rounded-[12px]">
             <div className="flex gap-4 ">
-              <img className="w-[400px]" src={imags[0]} alt="" />
+              <img
+                className="xl:w-[400px] lg:w-[250px] sm:w-[400px] md:w-[400px] w-[400px]"
+                src={imags[0]}
+                alt=""
+              />
               <div className="flex justify-center items-center flex-col gap-3">
-                <img className="w-[300px]" src={imags[1]} alt="" />
-                <img className="w-[300px]" src={imags[2]} alt="" />
+                <img src={imags[1]} alt="" />
+                <img src={imags[2]} alt="" />
               </div>
             </div>
+
             <div className="pt-[12px]">
               <h1 className="text-[20px] font-semibold font-Roboto ">{name}</h1>
               <p className={`text-[12px] ${extend ? "" : " line-clamp-2 "}`}>
@@ -27,14 +32,15 @@ const CardProject = ({ imags, name, title, langues, path, link }) => {
                 {extend ? "See Less" : "See More"}
               </button>
             </div>
+
             <div className="flex justify-between items-center">
               <div className="pt-[12px] flex gap-4">
-                <button className="custom-learn-more-btn rounded-[12px]">
+                <button className=" text-[12px] border-2 border-gray-400 px-[10px] hover:border-gray-300  transition-all duration-300 ease-in-out py-[10px] font-semibold rounded-[12px]">
                   <a href={link} target="_blank" rel="noopener noreferrer">
                     <span className="button-text">View Code</span>
                   </a>
                 </button>
-                <button className="custom-learn-more-btn rounded-[12px]">
+                <button className=" text-[12px] border-2 border-gray-400 px-[10px] hover:border-gray-300  transition-all duration-300 ease-in-out py-[10px] font-semibold rounded-[12px]">
                   <a href={path} target="_blank" rel="noopener noreferrer">
                     <span className="button-text">View Website</span>
                   </a>
