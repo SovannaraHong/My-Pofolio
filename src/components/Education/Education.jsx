@@ -63,13 +63,13 @@ const Education = () => {
           about <span className="text-[#ff4800]">me!</span>
         </h1>
       </div>
-      <div className="relative ">
+      {/* <div className="relative ">
         <img
           className="absolute w-[200px]  blocks  xl:left-[200px] lg:left-[50px] md:left-[0px] sm:left-[-60px]"
           src={st1}
           alt=""
         />
-      </div>
+      </div> */}
       <section className="py-[50px] font-popinse px-[20px] ">
         <main className="flex justify-center xl:flex-row  lg:flex-row md:flex-row sm:flex-row flex-col lg:gap-[200px] xl:gap-[200px] md:gap-[140px]  sm:gap-[50px] ">
           {/* left */}
