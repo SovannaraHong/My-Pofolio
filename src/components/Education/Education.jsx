@@ -110,7 +110,7 @@ const Education = () => {
           {/* right */}
           <section className="xl:max-w-[400px] lg:max-w-[400px] md:max-w-[400px] sm:max-w-[350px]">
             <div>
-              <button className=" blocks border-1 px-[30px] rounded-full font-semibold xl:text-[26px] lg:text-[26px] md:text-[26px] sm:text-[19px] italic py-[5px]">
+              <button className=" blocks border-1 border-[#00ff51] px-[30px] rounded-full font-semibold xl:text-[26px] lg:text-[26px] md:text-[26px] sm:text-[19px] italic py-[5px]">
                 hi here!
               </button>
             </div>
