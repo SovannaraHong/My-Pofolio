@@ -75,7 +75,7 @@ const FormContact = () => {
 
   return (
     <>
-      <section className="px-[20px] py-[20px] flex justify-center appearAnimation gap-5 font-popinse bg-[#f5f5f5]">
+      <section className="px-[20px] py-[20px] flex justify-center xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col appearAnimation xl:gap-5 lg:gap-5 md:gap-5 sm:gap-5 gap-20 font-popinse bg-[#f5f5f5]">
         {/* Contact Info */}
         <div className="max-w-[600px]">
           <h1
@@ -124,7 +124,7 @@ const FormContact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-[#ffffff] w-full max-w-[600px] p-[20px] rounded-lg shadow-md">
+        <div className="bg-[#ffffff] max-w-[600px] w-full  p-[20px] rounded-lg shadow-md">
           <h1 className="text-[22px] font-semibold mb-2 text-[#282f7e]">
             Send a Message
           </h1>
