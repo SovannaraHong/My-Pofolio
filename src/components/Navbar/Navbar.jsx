@@ -70,7 +70,7 @@ const Navbar = () => {
             className={`transition-all duration-300 linear overflow-hidden ${
               ActiveMenu
                 ? "  hidden xl:flex lg:flex md:flex sm:flex items-center xl:gap-10 lg:gap-10 md:gap-10 sm:gap-5"
-                : " h-[240px] visible opacity-100  flex flex-col gap-5 absolute top-[35px] w-full  right-[0px] bg-[#2c4e31] p-5 rounded-br-[10px] rounded-bl-[10px] shadow-lg z-[999]"
+                : " h-[240px] visible opacity-100  flex flex-col gap-5 absolute top-[35px] w-full  right-[0px] bg-[#000000] p-5 rounded-br-[10px] rounded-bl-[10px] shadow-lg z-[999]"
             }`}
           >
             {navLink.map((list, ind) => (
