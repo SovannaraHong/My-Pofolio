@@ -117,9 +117,11 @@ const Education = () => {
             <div className="py-[15px] blocks">
               <p className="xl:w-[400px] md:w-[400px] sm:w-[400px] lg:w-[400px] w-[300px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[12px] text-[11px]">
                 Hi, my name is{" "}
-                <span className="text-[#ff4800]">Hong Sovannara</span>. I’m a
-                passionate Frontend Developer with a strong interest in creating
-                modern, user-friendly, and responsive web applications.
+                <span className="text-[#ff4800] font-semibold">
+                  Hong Sovannara
+                </span>
+                . I’m a passionate Frontend Developer with a strong interest in
+                creating modern, user-friendly, and responsive web applications.
               </p>
               <hr className="border-b-1 my-[10px]" />
               <div className="flex flex-col gap-2 py-[12px]">
