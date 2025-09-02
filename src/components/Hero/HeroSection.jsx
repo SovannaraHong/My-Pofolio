@@ -127,9 +127,7 @@ const HeroSection = () => {
                 </p>
               </div>
               <h1 className="font-semibold xl:text-[28px] lg:text-[22px] text-[15px] py-[10px] font-Style anim-up delay-2">
-                <span className="text-white border-b-2 anim-glow">
-                  Hong Sovannara
-                </span>
+                <span className="text-white  anim-glow">Hong Sovannara</span>
               </h1>
 
               <h3 className="xl:text-[22px] lg:text-[16px] md:text-[10px] sm:text-[8px] text-[9px] font-popinse font-extrabold anim-up delay-3">
