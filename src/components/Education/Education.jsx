@@ -59,8 +59,8 @@ const Education = () => {
   return (
     <>
       <div className=" flade-up flex justify-center items-center py-[70px] pt-[50px]">
-        <h1 className=" font-Style uppercase xl:text-[30px] lg:text-[28px] md:text-[25px] sm:text-[25px] text-[20px] border-b-8  border-b-amber-500 rounded-[15px]">
-          about <span className="text-[#ff4800]">me!</span>
+        <h1 className=" font-Style uppercase xl:text-[30px] lg:text-[28px] md:text-[25px] sm:text-[25px] text-[20px] border-b-8  border-b-[#00ff51] rounded-[15px]">
+          about <span className="text-[#00ff51]">me!</span>
         </h1>
       </div>
       {/* <div className="relative ">
@@ -85,7 +85,7 @@ const Education = () => {
             <div className="py-[12px] pt-[30px] ">
               {leftItems.map((item, i) => (
                 <div key={i} className="py-[12px] blocks">
-                  <p className="text-[#ff4800] font-semibold font-Roboto xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[11px]">
+                  <p className="text-[#00ff51] font-semibold font-Roboto xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[11px]">
                     {item.year}
                   </p>
                   <p
@@ -117,7 +117,7 @@ const Education = () => {
             <div className="py-[15px] blocks">
               <p className="xl:w-[400px] md:w-[400px] sm:w-[400px] lg:w-[400px] w-[300px] xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[12px] text-[11px]">
                 Hi, my name is{" "}
-                <span className="text-[#ff4800] font-semibold">
+                <span className="text-[#00ff51] font-semibold">
                   Hong Sovannara
                 </span>
                 . I’m a passionate Frontend Developer with a strong interest in
@@ -158,7 +158,7 @@ const Education = () => {
               <div className="flex justify-start items-center gap-[15px] pt-[20px] py-[10px] ">
                 {software.map((s, i) => (
                   <img
-                    className="border-1 bg-white xl:px-[10px] xl:py-[8px] xl:w-[50px] lg:px-[10px] lg:py-[8px] lg:w-[50px] md:px-[10px] md:py-[8px] md:w-[50px] sm:px-[6px] sm:py-[6px] sm:w-[30px] w-[40px] px-[6px] py-[6px] rounded-[5px] "
+                    className="border-1 bg-[#00ff51] xl:px-[10px] xl:py-[8px] xl:w-[50px] lg:px-[10px] lg:py-[8px] lg:w-[50px] md:px-[10px] md:py-[8px] md:w-[50px] sm:px-[6px] sm:py-[6px] sm:w-[30px] w-[40px] px-[6px] py-[6px] rounded-[5px] "
                     src={s}
                     alt={i}
                     key={i}
@@ -171,7 +171,7 @@ const Education = () => {
                 .filter((e) => e.title == "Experience")
                 .map((item, i) => (
                   <div key={i} className="py-[12px]">
-                    <p className="text-[#ff4800] font-semibold font-Roboto">
+                    <p className="text-[#00ff51] font-semibold font-Roboto">
                       {item.year}
                     </p>
                     <p

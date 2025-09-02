@@ -83,8 +83,8 @@ const Navbar = () => {
                   className={`cursor-pointer xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[12px] transition-all duration-200 ease-in-out ${
                     location.pathname ===
                     (list.path === "/" ? "/" : `/${list.path}`)
-                      ? "bg-white text-black px-3 py-2 rounded-full font-semibold"
-                      : "hover:text-[#ffa802]"
+                      ? "bg-[#03c942] text-white px-3 py-2 rounded-full font-semibold "
+                      : "hover:text-cyan-400"
                   }`}
                 >
                   {list.icon} {list.label}
@@ -99,10 +99,10 @@ const Navbar = () => {
               navigate(location.pathname === "/mycv" ? "/" : "/mycv");
               setActive(!active);
             }}
-            className={`xl:text-[13px] xl:flex lg:flex md:flex sm:flex hidden font-semibold px-7 py-3 rounded-full transition-all duration-300 ease-in-out ${
+            className={`xl:text-[13px] xl:flex lg:flex md:flex sm:flex font-popinse hidden font-semibold px-7 py-3 rounded-full transition-all duration-300 ease-in-out ${
               location.pathname === "/mycv"
                 ? "bg-[#5462dd] text-white"
-                : "bg-white text-black"
+                : "bg-[#00ff51] text-white font-semibold"
             }`}
           >
             {location.pathname === "/mycv" ? "On Page CV" : "My CV"}

@@ -30,6 +30,29 @@ const HeroSection = () => {
 
     { icon: <i className="fa-brands fa-figma"></i>, label: "FIGMA" },
   ];
+
+  const social = [
+    {
+      icon: <i className="fa-brands fa-facebook"></i>,
+      link: "https://www.facebook.com/share/1BTeNwEsUK/?mibextid=wwXIfr",
+    },
+
+    {
+      icon: <i class="fa-brands fa-github"></i>,
+      link: "https://www.tiktok.com/@akira1269",
+    },
+
+    {
+      icon: <i className="fa-brands fa-linkedin"></i>,
+      link: "https://www.facebook.com/share/1BTeNwEsUK/?mibextid=wwXIfr",
+    },
+
+    {
+      icon: <i className="fa-brands fa-telegram"></i>,
+      link: "@Loveu1289",
+    },
+  ];
+
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -98,16 +121,20 @@ const HeroSection = () => {
           <div className="flex justify-center flex-col-reverse  xl:gap-50 lg:gap-5 md:gap-50 sm:gap-50 gap-15 xl:flex-row lg:flex-row md:flex-row sm:flex-row  items-center">
             {/* Left content */}
             <div>
+              <div>
+                <p className="anim-up delay-2 font-semibold text-[22px] font-popinse">
+                  Hi It's <span className="text-[#00ff51]">Me</span>
+                </p>
+              </div>
               <h1 className="font-semibold xl:text-[28px] lg:text-[22px] text-[15px] py-[10px] font-Style anim-up delay-2">
-                I'm{" "}
-                <span className="text-yellow-400 border-b-2 anim-glow">
+                <span className="text-white border-b-2 anim-glow">
                   Hong Sovannara
                 </span>
               </h1>
 
-              <h3 className="xl:text-[18px] lg:text-[16px] md:text-[10px] sm:text-[8px] text-[9px] font-Style anim-up delay-3">
+              <h3 className="xl:text-[22px] lg:text-[16px] md:text-[10px] sm:text-[8px] text-[9px] font-popinse font-extrabold anim-up delay-3">
                 And I'm a{" "}
-                <span className="text-cyan-400 font-bold drop-shadow-[0_0_10px_cyan] anim-glow">
+                <span className="text-[#00ff51] font-bold drop-shadow-[0_0_10px_cyan] anim-glow">
                   {text}
                 </span>
                 <span className="blinking-cursor">|</span>
@@ -124,7 +151,7 @@ const HeroSection = () => {
                 <button
                   onMouseEnter={() => setHover(!hover)}
                   onMouseLeave={() => setHover(!hover)}
-                  className={`xl:text-[15px] lg:text-[15px] md:text-[10px] font-semibold border-1 xl:px-[10px] lg:px-[10px] xl:py-[9px]  lg:py-[9px] md:px-[10px] md:py-[4px] sm:px-[5px] sm:py-[5px] sm:text-[8px] px-[5px] rounded-[5px] hover:bg-amber-400 transition-all duration-300 ease-in-out hover:text-white flex justify-center items-center gap-2`}
+                  className={`xl:text-[15px] lg:text-[15px] md:text-[10px] font-semibold border-[#00ff51]  xl:px-[10px] border-3  lg:px-[10px] xl:py-[9px]  lg:py-[9px] md:px-[10px] md:py-[4px] sm:px-[5px] sm:py-[5px] sm:text-[8px] px-[5px] rounded-[10px] hover:bg-[#00ff51] transition-all duration-400 ease-in-out hover:text-white flex justify-center items-center gap-2`}
                   onClick={() => navigate("/mycv")}
                 >
                   {hover ? (
@@ -141,6 +168,13 @@ const HeroSection = () => {
                     </>
                   )}
                 </button>
+              </div>
+              <div className="pt-[20px] flex justify-start items-center gap-2 ">
+                {social.map((sm) => (
+                  <span className="border-3 anim-up delay-7 px-[6px] py-[4px] rounded-full border-[#00ff51] hover:shadow-[0_0_25px_#00ff51] hover:bg-[#00ff51] hover:scale-[1.2] transition-all duration-300  ">
+                    {sm.icon}
+                  </span>
+                ))}
               </div>
             </div>
 
@@ -164,7 +198,7 @@ const HeroSection = () => {
         </div>
 
         <div className="pt-[60px] flex justify-center items-center overflow-hidden">
-          <div className="scroll-container w-[80%] bg-[#ffa802] py-[6px] rounded-[20px] text-white">
+          <div className="scroll-container w-[80%] bg-[#007db8] py-[6px] rounded-[20px] text-white">
             <div className="scroll-content">
               {foottag.map((item, ind) => (
                 <p

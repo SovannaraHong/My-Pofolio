@@ -21,6 +21,9 @@
   --font-Bit: "Bitcount Single", sans-serif;
 }
 
+:root {
+  --primary-color: #00ff51;
+}
 /* body {
   background-color: #f0eed6;
 
