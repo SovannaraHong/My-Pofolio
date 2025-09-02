@@ -113,11 +113,11 @@ const Project = () => {
     <>
       <main className="h-auto ">
         <div className="flex justify-center items-center py-[50px]">
-          <h1 className="text-[30px] font-Style   uppercase  border-b-2 flade-up border-b-green-600 ">
+          <h1 className="xl:text-[30px] lg:text-[30px] md:text-[30px] sm:text-[20px] text-[14px] font-Style   uppercase  border-b-2 flade-up border-b-green-600 ">
             My Project
           </h1>
         </div>
-        <div className="grid grid-cols-2 gap-6 px-[50px] pt-[30px] cardPro  cursor-pointer">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 xl:px-[50px] lg:px-[50px] md:px-[50px] sm:px-[50px] px-[10px] pt-[30px] cardPro  cursor-pointer">
           {groupProject.map((card, ind) => (
             <CardProject key={ind} {...card} />
           ))}
