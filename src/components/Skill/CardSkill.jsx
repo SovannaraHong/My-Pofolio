@@ -38,7 +38,7 @@ const CardSkill = ({ img, title, color, num }) => {
   return (
     <div
       ref={ref}
-      className="relative group xl:w-[160px] lg:w-[160px] md:w-[160px] sm:w-[160px] w-[120px] xl:h-[208px] lg:h-[208px] md:h-[208px] sm:h-[208px] h-[158px] rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-lg cursor-pointer transform transition duration-300 hover:-translate-y-2"
+      className="relative group xl:w-[160px] lg:w-[160px] md:w-[160px] sm:w-[160px] w-[120px] xl:h-[208px] lg:h-[208px] md:h-[208px] sm:h-[208px] h-[158px] rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-lg cursor-pointer transform transition duration-300 hover:-translate-y-2"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -64,7 +64,7 @@ const CardSkill = ({ img, title, color, num }) => {
         <div className="h-1/4 flex items-center justify-center">
           <p
             className="xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[12px] font-semibold tracking-wider transition"
-            style={{ color: hover ? color : "black" }}
+            style={{ color: hover ? color : "white" }}
           >
             {title}
           </p>

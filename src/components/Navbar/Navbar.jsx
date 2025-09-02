@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex justify-center items-center pt-[20px] font-popinse fixed md:px-[20px] sm:px-[20px] px-[10px] top-0 left-0 right-0 z-[999999]">
-        <div className="flex items-center justify-between xl:w-[1200px] lg:w-[1200px] md:w-[1200px] sm:w-[1200px] w-[1200px] xl:py-[5px] lg:py-[5px] md:py-[5px] sm:py-[5px] py-[10px] bg-[#2c4e31] text-white px-2 xl:rounded-full lg:rounded-full md:rounded-full sm:rounded-full rounded-[10px] relative">
+        <div className="flex items-center justify-between xl:w-[1200px] lg:w-[1200px] md:w-[1200px] sm:w-[1200px] w-[1200px] xl:py-[5px] lg:py-[5px] md:py-[5px] sm:py-[5px] py-[10px] bg-[#000000] text-white px-2 xl:rounded-full lg:rounded-full md:rounded-full sm:rounded-full rounded-[10px] relative">
           {/* Left (Logo + Name) */}
           <div className="flex items-center gap-3">
             <img

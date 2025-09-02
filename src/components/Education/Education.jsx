@@ -140,25 +140,25 @@ const Education = () => {
               </div>
             </div>
             <div className="blocks">
-              <button className="font-extrabold font-Roboto xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[15px] uppercase bg-[#cfe472] rounded-full px-[30px] py-[5px]">
+              <button className="font-extrabold font-Roboto xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[15px] uppercase bg-[#252525] rounded-full px-[30px] py-[5px]">
                 SKILLS
               </button>
               <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-2 py-[20px]">
                 {skillItem.map((i) => (
-                  <button className="border-3 border-blue-100 px-[20px] py-[2px] bg-[#f5f5f5] hover:scale-[1.2] transition-all duration-300 ease-in-out  text-[12px] font-semibold rounded-[10px]">
+                  <button className="border-1 border-white text-white px-[20px] py-[2px] bg-[#000000] hover:scale-[1.2] transition-all duration-300 ease-in-out  text-[12px] font-semibold rounded-[10px]">
                     {i}
                   </button>
                 ))}
               </div>
             </div>
             <div className="pt-[20px] blocks ">
-              <button className=" blocks font-extrabold font-Roboto xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[15px] text-[13px] uppercase bg-[#ffb8ff] rounded-full px-[30px] py-[9px]">
+              <button className=" blocks font-extrabold font-Roboto xl:text-[20px] lg:text-[20px] md:text-[20px] sm:text-[15px] text-[13px] uppercase bg-[#2b2b2b] rounded-full px-[30px] py-[9px]">
                 Software
               </button>
               <div className="flex justify-start items-center gap-[15px] pt-[20px] py-[10px] ">
                 {software.map((s, i) => (
                   <img
-                    className="border-1 xl:px-[10px] xl:py-[8px] xl:w-[50px] lg:px-[10px] lg:py-[8px] lg:w-[50px] md:px-[10px] md:py-[8px] md:w-[50px] sm:px-[6px] sm:py-[6px] sm:w-[30px] w-[40px] px-[6px] py-[6px] rounded-[5px] "
+                    className="border-1 bg-white xl:px-[10px] xl:py-[8px] xl:w-[50px] lg:px-[10px] lg:py-[8px] lg:w-[50px] md:px-[10px] md:py-[8px] md:w-[50px] sm:px-[6px] sm:py-[6px] sm:w-[30px] w-[40px] px-[6px] py-[6px] rounded-[5px] "
                     src={s}
                     alt={i}
                     key={i}

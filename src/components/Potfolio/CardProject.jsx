@@ -7,8 +7,8 @@ const CardProject = ({ imags, name, title, langues, path, link }) => {
   return (
     <>
       <main className="transform transition-transform duration-300 hover:scale-[1.03] appBlock font-popinse">
-        <div className="bg-white  w-fit p-[20px] rounded-[12px] ">
-          <div className="bg-[#e2e2e2] p-[20px] rounded-[12px]">
+        <div className="bg-[#2c2c2c]  w-fit p-[20px] rounded-[12px] ">
+          <div className="bg-[#070707] p-[20px] rounded-[12px]">
             <div className="flex gap-4 ">
               <img
                 className="xl:w-[400px] lg:w-[250px] sm:w-[400px] md:w-[400px] w-[150px]"

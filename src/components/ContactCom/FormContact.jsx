@@ -75,16 +75,16 @@ const FormContact = () => {
 
   return (
     <>
-      <section className="px-[20px] py-[20px] flex justify-center xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col appearAnimation xl:gap-5 lg:gap-5 md:gap-5 sm:gap-5 gap-20 font-popinse bg-[#f5f5f5]">
+      <section className="px-[20px] py-[20px] flex justify-center xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col appearAnimation xl:gap-5 lg:gap-5 md:gap-5 sm:gap-5 gap-20 font-popinse bg-[#1d1d1d]">
         {/* Contact Info */}
         <div className="max-w-[600px]">
           <h1
-            className="text-[22px] font-semibold mb-2 text-[#282f7e] border-b-3 border-b-blue-300 inline-block
+            className="text-[22px] font-semibold mb-2 text-[#4b59eb] border-b-3 border-b-blue-300 inline-block
           "
           >
             Get in touch
           </h1>
-          <p className="text-gray-600 line-clamp-2 text-[12px]">
+          <p className="text-white line-clamp-2 text-[12px]">
             This is my Contact Form and you can contact me here is thate eazy
             just input in form the the message it send to me thank you !
           </p>
@@ -124,11 +124,11 @@ const FormContact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-[#ffffff] max-w-[600px] w-full  p-[20px] rounded-lg shadow-md">
-          <h1 className="text-[22px] font-semibold mb-2 text-[#282f7e]">
+        <div className="bg-[#000000] max-w-[600px] w-full  p-[20px] rounded-lg shadow-md">
+          <h1 className="text-[22px] font-semibold mb-2 text-[#ffffff]">
             Send a Message
           </h1>
-          <p className="text-gray-600 line-clamp-2 text-[12px]">
+          <p className="text-white line-clamp-2 text-[12px]">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
             sapiente rem quo eaque natus, quos eos impedit quibusdam hic
             reiciendis?
@@ -149,7 +149,7 @@ const FormContact = () => {
                 name="name"
                 type="text"
                 placeholder="Enter Name..."
-                className="bg-[#c7d7fc] w-full py-2 px-3 rounded-[5px]"
+                className="bg-[#1e1f1f] w-full py-2 px-3 rounded-[5px]"
                 required
               />
             </div>
@@ -164,7 +164,7 @@ const FormContact = () => {
                 name="phone"
                 type="number"
                 placeholder="Enter Phone..."
-                className="bg-[#c7d7fc] w-full py-2 px-3 rounded-[5px]"
+                className="bg-[#1e1f1f] w-full py-2 px-3 rounded-[5px]"
                 required
               />
             </div>
@@ -179,7 +179,7 @@ const FormContact = () => {
                 name="email"
                 type="email"
                 placeholder="Enter Email..."
-                className="bg-[#c7d7fc] w-full py-2 px-3 rounded-[5px]"
+                className="bg-[#1e1f1f] w-full py-2 px-3 rounded-[5px]"
                 required
               />
             </div>
@@ -193,7 +193,7 @@ const FormContact = () => {
                 id="message"
                 name="message"
                 placeholder="Enter your message..."
-                className="bg-[#c7d7fc] w-full py-2 px-3 rounded-[5px] resize-none h-[120px]"
+                className="bg-[#1e1f1f] w-full py-2 px-3 rounded-[5px] resize-none h-[120px]"
                 required
               ></textarea>
             </div>
