@@ -23,7 +23,7 @@ const FormContact = () => {
 
     {
       icon: <i className="fa-brands fa-telegram"></i>,
-      link: "@Loveu1289",
+      link: "https://t.me/Loveu1289",
     },
   ];
 

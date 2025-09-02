@@ -16,10 +16,11 @@ import {
 } from "./layouts/layout";
 import ScrollPage from "../ScrollPage";
 import MyCv from "./components/Cover/MyCv";
+import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RoutLayout />}>
+      <Route path="/" element={<RoutLayout />} errorElement={<NotFoundPage />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutLayout />}></Route>
         <Route path="profolio" element={<PotfoLayout />}></Route>
