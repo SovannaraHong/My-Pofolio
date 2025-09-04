@@ -52,8 +52,8 @@ const Navbar = () => {
               src={Logo}
               alt="Logo"
             />
-            <h3 className="font-semibold xl:text-[16px] lg:text-[16px] md:text-[16px] sm:text-[12px] hover-Logo">
-              Hong Sovannara
+            <h3 className="font-semibold xl:text-[16px] lg:text-[16px] md:text-[16px] transition-all duration-300 ease-in-out  sm:text-[12px]  hover-Logo">
+              Hong <span className="text-[#00ff51]">Sovannara</span>
             </h3>
           </div>
 

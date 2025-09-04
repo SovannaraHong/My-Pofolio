@@ -172,12 +172,12 @@ const FormContact = () => {
             {/* Email */}
             <div className="flex flex-col gap-1 col-span-2">
               <label className="font-semibold" htmlFor="email">
-                Email
+                Subject
               </label>
               <input
                 id="email"
                 name="email"
-                type="email"
+                type="text"
                 placeholder="Enter Email..."
                 className="bg-[#1e1f1f] w-full py-2 px-3 rounded-[5px]"
                 required

@@ -43,7 +43,7 @@
 }
 
 .hover-Logo:hover {
-  text-shadow: 2px 3px 10px #ff8800;
+  text-shadow: 2px 3px 30px #00ff51;
   transition: all 0.3s ease-in-out;
 }
 .effectNav::after {

@@ -127,7 +127,9 @@ const HeroSection = () => {
                 </p>
               </div>
               <h1 className="font-semibold xl:text-[28px] lg:text-[22px] text-[15px] py-[10px] font-Style anim-up delay-2">
-                <span className="text-white  anim-glow">Hong Sovannara</span>
+                <span className="text-white  anim-glow">
+                  Hong <span className="text-[#00ff51]">Sovannara</span>{" "}
+                </span>
               </h1>
 
               <h3 className="xl:text-[22px] lg:text-[16px] md:text-[10px] sm:text-[8px] text-[9px] font-popinse font-extrabold anim-up delay-3">
@@ -149,7 +151,7 @@ const HeroSection = () => {
                 <button
                   onMouseEnter={() => setHover(!hover)}
                   onMouseLeave={() => setHover(!hover)}
-                  className={`xl:text-[15px] lg:text-[15px] md:text-[10px] font-semibold border-[#00ff51]  xl:px-[10px] border-3  lg:px-[10px] xl:py-[9px]  lg:py-[9px] md:px-[10px] md:py-[4px] sm:px-[5px] sm:py-[5px] sm:text-[8px] px-[5px] rounded-[10px] hover:bg-[#00ff51] transition-all duration-400 ease-in-out hover:text-white flex justify-center items-center gap-2`}
+                  className={`xl:text-[15px] lg:text-[15px] md:text-[10px] font-semibold border-[#00ff51] hover:border-white  xl:px-[10px] border-3  lg:px-[10px] xl:py-[9px]  lg:py-[9px] md:px-[10px] md:py-[4px] sm:px-[5px] sm:py-[5px] sm:text-[8px] px-[5px] rounded-[10px] hover:bg-[#00ff51] transition-all duration-400 ease-in-out hover:text-white flex justify-center items-center gap-2`}
                   onClick={() => navigate("/mycv")}
                 >
                   {hover ? (

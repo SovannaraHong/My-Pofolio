@@ -4,19 +4,24 @@ import FormContact from "../ContactCom/FormContact";
 import "./CV.css";
 const MyCv = () => {
   return (
-    <div className="flex justify-between items-start pt-[100px] px-[20px] h-screen overflow-hidden">
-      <div className="w-[500px]"></div>
+    <>
+      <div className="flex justify-center items-center gap-4 pt-[100px]">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 grid-cols-1s  items-start  ">
+          {/* Left side - contact form */}
+          <div className="w-[750px] slide-in-left">
+            <FormContact />
+          </div>
 
-      {/* Left side - contact form */}
-      <div className="fixed top-[100px] left-[20px] w-[750px] slide-in-left">
-        <FormContact />
+          <div className="  ade-up flex pt-[20px]  justify-center items-center">
+            <img
+              className="xl:w-[500px] lg:w-[500px] md:w-[500px] sm:w-[400px] w-[300px]"
+              src={cv}
+              alt="CV"
+            />
+          </div>
+        </div>
       </div>
-
-      {/* Right side - scrollable CV */}
-      <div className="ml-[450px] h-[calc(100vh-120px)] overflow-y-auto fade-up">
-        <img className="w-[1000px]" src={cv} alt="CV" />
-      </div>
-    </div>
+    </>
   );
 };
 
