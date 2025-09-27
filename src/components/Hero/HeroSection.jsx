@@ -5,7 +5,8 @@ import "./HeroCss.css";
 // img
 import Pic from "../../assets/images/image.png";
 import Shape from "../../assets/images/Sh.png";
-import Picture from "../../assets/images/Logos.png";
+import Picture1 from "../../assets/images/Logos.png";
+import Picture from "../../assets/logo/image.png";
 import p1 from "../../assets/images/p1.png";
 import pho from "../../assets/Icon/ps.png";
 import { Link, useNavigate } from "react-router-dom";
