@@ -8,6 +8,8 @@ import i7 from "../../assets/Icon/rj.png";
 import i8 from "../../assets/Icon/vue.png";
 import i9 from "../../assets/Icon/gitt.png";
 import i10 from "../../assets/Icon/github.png";
+import i11 from "../../assets/Icon/py1.png";
+import i12 from "../../assets/Icon/java1.png";
 import CardSkill from "./CardSkill";
 
 import "./Myskill.css";
@@ -24,6 +26,8 @@ const MySkill = () => {
     { img: i8, title: "Vue js", num: 50, color: "#42b883" }, // Vue Green
     { img: i9, title: "Git", num: 92, color: "#fd8787" }, // Vue Green
     { img: i10, title: "GitHub", num: 92, color: "#585858" }, // Vue Green
+    { img: i11, title: "Python", num: 92, color: "#585858" }, // Vue Green
+    { img: i12, title: "Java", num: 92, color: "#585858" }, // Vue Green
   ];
 
   return (

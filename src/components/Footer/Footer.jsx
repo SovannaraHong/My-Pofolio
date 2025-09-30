@@ -40,9 +40,11 @@ const Footer = () => {
             <h2 className="text-xl font-bold text-white mb-3">
               HONG SOVANNARA
             </h2>
-            <p className="text-sm leading-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="text-sm leading-6 line-clamp-3">
+              In my free time, I enjoy researching technology and practicing my
+              front-end development skills. I also spend time reading books to
+              gain knowledge about professional relationships and personal
+              growth.
             </p>
           </div>
 

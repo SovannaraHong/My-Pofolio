@@ -19,12 +19,12 @@ const HeroSection = () => {
     "Freelancer",
     "Creative Coder",
   ];
-  const foottag = [
+  const tag = [
     { icon: <i className="fa-brands fa-html5"></i>, label: "HTML" },
     { icon: <i className="fa-brands fa-css3-alt"></i>, label: "CSS" },
     { icon: <i className="fa-brands fa-square-js"></i>, label: "JAVASCRIPT" },
     { icon: <i className="bx bxl-typescript"></i>, label: "TYPESCRIPT" },
-    { icon: <i className="fa-brands fa-bootstrap"></i>, label: "BOOSTRAP" },
+    { icon: <i className="fa-brands fa-bootstrap"></i>, label: "BOOTSTRAP" },
     { icon: <i className="bx bxl-tailwind-css"></i>, label: "TAILWIND" },
     { icon: <i className="fa-brands fa-react"></i>, label: "REACT JS" },
     { icon: <i className="fa-brands fa-vuejs"></i>, label: "VUE JS" },
@@ -201,7 +201,7 @@ const HeroSection = () => {
         <div className="pt-[60px] flex justify-center items-center overflow-hidden">
           <div className="scroll-container w-[80%] bg-[#007db8] py-[6px] rounded-[20px] text-white">
             <div className="scroll-content">
-              {foottag.map((item, ind) => (
+              {tag.map((item, ind) => (
                 <p
                   className="font-semibold xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-[10px] inline-block mx-8 font-Style  justify-center items-center "
                   key={ind}
@@ -211,7 +211,7 @@ const HeroSection = () => {
                 </p>
               ))}
               {/* duplicate items for seamless loop */}
-              {foottag.map((item, ind) => (
+              {tag.map((item, ind) => (
                 <p
                   className="font-semibold xl:text-[15px] lg:text-[15px] md:text-[15px] sm:text-[15px] text-[10px] inline-block mx-8 font-Style justify-center items-center"
                   key={`dup-${ind}`}
