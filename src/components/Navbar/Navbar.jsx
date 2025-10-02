@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "../../assets/logo.png";
 import "./Navbar.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import cv from "../../assets/Hong-Sovannara-CV.pdf";
 
 const Navbar = () => {
   const navLink = [
@@ -93,20 +94,13 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Right (CV Button) */}
-          <button
-            onClick={() => {
-              navigate(location.pathname === "/mycv" ? "/" : "/mycv");
-              setActive(!active);
-            }}
-            className={`xl:text-[13px] xl:flex lg:flex md:flex sm:flex font-popinse hidden font-semibold px-7 py-3 rounded-full transition-all duration-300 ease-in-out ${
-              location.pathname === "/mycv"
-                ? "bg-[#5462dd] text-white"
-                : "bg-[#00ff51] text-white font-semibold"
-            }`}
+          <a
+            href={cv}
+            download
+            className="xl:text-[13px] xl:flex lg:flex md:flex sm:flex font-popinse hidden font-semibold px-7 py-3 rounded-full transition-all duration-300 ease-in-out bg-[#00ff51] text-white"
           >
-            {location.pathname === "/mycv" ? "On Page CV" : "My CV"}
-          </button>
+            Download CV
+          </a>
         </div>
       </nav>
     </>
