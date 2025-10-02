@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./HeroCss.css";
-
+import cv from "../../assets/Hong-Sovannara-CV.pdf";
 // img
 import Pic from "../../assets/images/image.png";
 import Shape from "../../assets/images/Sh.png";
@@ -149,26 +149,13 @@ const HeroSection = () => {
               </p>
 
               <div className=" space-x-4 flex text-[7px] anim-up delay-5">
-                <button
-                  onMouseEnter={() => setHover(!hover)}
-                  onMouseLeave={() => setHover(!hover)}
+                <a
                   className={`xl:text-[15px] lg:text-[15px] md:text-[10px] font-semibold border-[#00ff51] hover:border-white  xl:px-[10px] border-3  lg:px-[10px] xl:py-[9px]  lg:py-[9px] md:px-[10px] md:py-[4px] sm:px-[5px] sm:py-[5px] sm:text-[8px] px-[5px] rounded-[10px] hover:bg-[#00ff51] transition-all duration-400 ease-in-out hover:text-white flex justify-center items-center gap-2`}
-                  onClick={() => navigate("/mycv")}
+                  href={cv}
+                  download
                 >
-                  {hover ? (
-                    <>
-                      {" "}
-                      View My CV{" "}
-                      <i class="bx bx-chevrons-right text-[20px] "></i>
-                    </>
-                  ) : (
-                    <>
-                      {" "}
-                      Come to View{" "}
-                      <i class="bx bx-chevrons-right text-[20px] "></i>
-                    </>
-                  )}
-                </button>
+                  Downlord CV
+                </a>
               </div>
               <div className="pt-[20px] flex justify-start items-center gap-2 ">
                 {social.map((sm) => (
