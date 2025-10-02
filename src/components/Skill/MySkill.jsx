@@ -20,14 +20,14 @@ const MySkill = () => {
     { img: i2, title: "Css", num: 90, color: "#264de4" }, // Blue
     { img: i3, title: "Javascript", num: 85, color: "#f7df1e" }, // Yellow
     { img: i4, title: "Tailwind", num: 88, color: "#38bdf8" }, // Sky Blue
-    { img: i5, title: "Bootstrap", num: 60, color: "#7952b3" }, // Purple
-    { img: i6, title: "Typescript", num: 70, color: "#3178c6" }, // TS Blue
+    { img: i5, title: "Bootstrap", num: 30, color: "#7952b3" }, // Purple
+    { img: i6, title: "Typescript", num: 30, color: "#3178c6" }, // TS Blue
     { img: i7, title: "React js", num: 83, color: "#61dafb" }, // React Cyan
-    { img: i8, title: "Vue js", num: 50, color: "#42b883" }, // Vue Green
+    { img: i8, title: "Vue js", num: 20, color: "#42b883" }, // Vue Green
     { img: i9, title: "Git", num: 92, color: "#fd8787" }, // Vue Green
     { img: i10, title: "GitHub", num: 92, color: "#585858" }, // Vue Green
-    { img: i11, title: "Python", num: 92, color: "#585858" }, // Vue Green
-    { img: i12, title: "Java", num: 92, color: "#585858" }, // Vue Green
+    { img: i11, title: "Python", num: 32, color: "#585858" }, // Vue Green
+    { img: i12, title: "Java", num: 22, color: "#585858" }, // Vue Green
   ];
 
   return (
