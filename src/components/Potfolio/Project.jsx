@@ -120,8 +120,9 @@ const groupProject = [
       <i class="bx bxl-tailwind-css"></i>,
       <i class="fa-brands fa-css3-alt"></i>,
     ],
-    path: "https://food-ecom-ten.vercel.app/",
-    link: "https://github.com/SovannaraHong/Food-ecom.git",
+    complete: "building",
+    path: "https://website-e-commers.vercel.app/",
+    link: "https://github.com/SovannaraHong/website-e-commers.git",
   },
 ];
 

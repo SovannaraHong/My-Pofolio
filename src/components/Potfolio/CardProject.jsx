@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Card.css";
 import { useState } from "react";
-const CardProject = ({ imags, name, title, langues, path, link }) => {
+const CardProject = ({ imags, name, title, langues, path, link, complete }) => {
   const [extend, setExtend] = useState(false);
   const [showLang, setShowLang] = useState(true);
   return (
@@ -52,6 +52,15 @@ const CardProject = ({ imags, name, title, langues, path, link }) => {
                     <span className="button-text">View Website</span>
                   </a>
                 </button>
+                {complete === "building" ? (
+                  <>
+                    <button className=" xl:text-[12px] lg:text-[12px] md:text-[10px]  sm:text-[8px]  text-[9px]  border-2 border-red-400 px-[10px] hover:border-gray-300  transition-all duration-300 ease-in-out py-[10px] font-semibold rounded-[12px]">
+                      <span className="button-text">{complete}...</span>
+                    </button>
+                  </>
+                ) : (
+                  <></>
+                )}
               </div>
               <div>
                 {showLang ? (
