@@ -24,6 +24,10 @@ import f1 from "../../assets/Pofolio/food/1.png";
 import f2 from "../../assets/Pofolio/food/2.png";
 import f3 from "../../assets/Pofolio/food/3.png";
 
+import a1 from "../../assets/Pofolio/phka/1.png";
+import a2 from "../../assets/Pofolio/phka/2.png";
+import a3 from "../../assets/Pofolio/phka/3.png";
+
 const foottag = [
   { icon: <i class="fa-brands fa-html5"></i>, label: "HTML" },
   { icon: <i class="fa-brands fa-css3-alt"></i>, label: "CSS" },
@@ -101,6 +105,19 @@ const groupProject = [
     langues: [
       <i class="fa-brands fa-html5"></i>,
 
+      <i class="fa-brands fa-css3-alt"></i>,
+    ],
+    path: "https://food-ecom-ten.vercel.app/",
+    link: "https://github.com/SovannaraHong/Food-ecom.git",
+  },
+  {
+    name: "Phka-ecommers",
+    title:
+      "Phka is a modern space that celebrates beauty, design, and inspiration. Whether through fashion, art, or lifestyle, Phka brings fresh ideas that blossom into unique experiences. Our goal is to connect people with creativity that feels authentic, stylish, and meaningful. one of the largest platforms in the world where people can watch, share, and create videos on almost any topic imaginable. From music and movies to tutorials, gaming, education, and vlogs, YouTube gives everyone a space to express creativity and connect with an audience. It has become more than just an entertainment site—it’s also a learning hub, a marketing tool for businesses, and even a career path for many creators. With billions of users worldwide, YouTube continues to shape culture, trends, and the way we consume content every day.",
+    imags: [a1, a2, a3],
+    langues: [
+      <i class="fa-brands fa-react"></i>,
+      <i class="bx bxl-tailwind-css"></i>,
       <i class="fa-brands fa-css3-alt"></i>,
     ],
     path: "https://food-ecom-ten.vercel.app/",
