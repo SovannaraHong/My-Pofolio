@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.png";
 import "./Navbar.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import cv from "../../assets/Hong-Sovannara-CV.pdf";
+import CV from "../../assets/HongSovannara-CV.pdf";
 
 const Navbar = () => {
   const navLink = [
@@ -95,7 +96,7 @@ const Navbar = () => {
           </ul>
 
           <a
-            href={cv}
+            href={CV}
             download
             className="xl:text-[13px] xl:flex lg:flex md:flex sm:flex font-popinse hidden font-semibold px-7 py-3 rounded-full transition-all duration-300 ease-in-out bg-[#00ff51] text-white"
           >

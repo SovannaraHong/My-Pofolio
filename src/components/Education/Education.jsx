@@ -2,15 +2,14 @@ import { useState } from "react";
 import r1 from "../../assets/images/r1.png";
 import "./Edu.css";
 import s1 from "../../assets/images/Software/vs.png";
-import s2 from "../../assets/images/Software/ai.png";
-import s3 from "../../assets/images/Software/phs.png";
-import s4 from "../../assets/images/Software/fig.png";
-import s5 from "../../assets/images/Software/pre.png";
-import s6 from "../../assets/images/Software/xd.png";
-import st1 from "../../assets/styleImg/1.png";
+import i1 from "../../assets/images/Software/i1.png";
+import i2 from "../../assets/images/Software/i2.png";
+import i3 from "../../assets/images/Software/i3.png";
+import i4 from "../../assets/images/Software/i4.png";
+import i5 from "../../assets/images/Software/i5.png";
 
 const Education = () => {
-  const software = [s1, s2, s3, s4, s5, s6];
+  const software = [i4, i1, i2, i3, i5];
 
   // Array of education/experience items
   const leftItems = [
@@ -158,7 +157,7 @@ const Education = () => {
               <div className="flex justify-start items-center gap-[15px] pt-[20px] py-[10px] ">
                 {software.map((s, i) => (
                   <img
-                    className="border-1 bg-[#00ff51] xl:px-[10px] xl:py-[8px] xl:w-[50px] lg:px-[10px] lg:py-[8px] lg:w-[50px] md:px-[10px] md:py-[8px] md:w-[50px] sm:px-[6px] sm:py-[6px] sm:w-[30px] w-[40px] px-[6px] py-[6px] rounded-[5px] "
+                    className="border-1  xl:px-[10px] xl:py-[8px] xl:w-[50px] lg:px-[10px] lg:py-[8px] lg:w-[50px] md:px-[10px] md:py-[8px] md:w-[50px] sm:px-[6px] sm:py-[6px] sm:w-[30px] w-[40px] px-[6px] py-[6px] rounded-[5px] "
                     src={s}
                     alt={i}
                     key={i}

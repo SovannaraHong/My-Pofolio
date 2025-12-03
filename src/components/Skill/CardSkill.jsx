@@ -6,34 +6,34 @@ const CardSkill = ({ img, title, color, num }) => {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
 
-  useEffect(() => {
-    let observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            let start = 0;
-            let end = num;
-            let duration = 1500; // 1.5s animation
-            let stepTime = Math.abs(Math.floor(duration / end));
+  // useEffect(() => {
+  //   let observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           let start = 0;
+  //           let end = num;
+  //           let duration = 1500; // 1.5s animation
+  //           let stepTime = Math.abs(Math.floor(duration / end));
 
-            let timer = setInterval(() => {
-              start += 1;
-              setCount(start);
-              if (start >= end) {
-                clearInterval(timer);
-              }
-            }, stepTime);
-            observer.unobserve(entry.target); // run only once
-          }
-        });
-      },
-      { threshold: 0.5 } // trigger when 50% visible
-    );
+  //           let timer = setInterval(() => {
+  //             start += 1;
+  //             setCount(start);
+  //             if (start >= end) {
+  //               clearInterval(timer);
+  //             }
+  //           }, stepTime);
+  //           observer.unobserve(entry.target); // run only once
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.5 } // trigger when 50% visible
+  //   );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-  }, [num]);
+  //   if (ref.current) {
+  //     observer.observe(ref.current);
+  //   }
+  // }, [num]);
 
   return (
     <div
@@ -53,12 +53,12 @@ const CardSkill = ({ img, title, color, num }) => {
         </div>
         <div>
           {/* Animated number */}
-          <p
+          {/* <p
             style={{ color }}
             className="font-semibold xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[14px] text-[12px]"
           >
             {count} %
-          </p>
+          </p> */}
         </div>
         {/* Title */}
         <div className="h-1/4 flex items-center justify-center">

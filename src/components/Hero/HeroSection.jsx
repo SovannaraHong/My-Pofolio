@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./HeroCss.css";
-import cv from "../../assets/Hong-Sovannara-CV.pdf";
+import cv from "../../assets/HongSovannara-CV.pdf";
 // img
 import Pic from "../../assets/images/image.png";
 import Shape from "../../assets/images/Sh.png";
@@ -40,12 +40,12 @@ const HeroSection = () => {
 
     {
       icon: <i class="fa-brands fa-github"></i>,
-      link: "https://www.tiktok.com/@akira1269",
+      link: "https://github.com/SovannaraHong",
     },
 
     {
       icon: <i className="fa-brands fa-linkedin"></i>,
-      link: "https://www.facebook.com/share/1BTeNwEsUK/?mibextid=wwXIfr",
+      link: "https://www.linkedin.com/feed/",
     },
 
     {
@@ -111,11 +111,6 @@ const HeroSection = () => {
           src={p1}
           alt=""
         />
-        <img
-          className="xl:w-[200px] lg:w-[150px] md:w-[120px] sm:w-[120px] w-[120px]   absolute xl:top-[250px] lg:top-[200px] xl:right-[380px] lg:right-[250px] md:top-[200px] md:right-[220px] sm:top-[170px] sm:right-[180px] top-[150px] right-[220px] z-[200]"
-          src={Shape}
-          alt=""
-        />
       </div>
       <main>
         <div className="xl:px-[100px] lg:px-[100px] flex-re md:px-[20px] sm:px-[50px] justify-center  font-popinse flex items-center">
@@ -159,9 +154,11 @@ const HeroSection = () => {
               </div>
               <div className="pt-[20px] flex justify-start items-center gap-2 ">
                 {social.map((sm) => (
-                  <span className="border-3 anim-up delay-7 px-[6px] py-[4px] rounded-full border-[#00ff51] hover:shadow-[0_0_25px_#00ff51] hover:bg-[#00ff51] hover:scale-[1.2] transition-all duration-300  ">
-                    {sm.icon}
-                  </span>
+                  <Link to={sm.link}>
+                    <span className="border-3 anim-up delay-7 px-[6px] py-[4px] rounded-full border-[#00ff51] hover:shadow-[0_0_25px_#00ff51] hover:bg-[#00ff51] hover:scale-[1.2] transition-all duration-300  ">
+                      {sm.icon}
+                    </span>
+                  </Link>
                 ))}
               </div>
             </div>
